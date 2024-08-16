@@ -31,7 +31,7 @@ section {
 }
 
 .logo-container img {
-  width: 200px;
+  width: 300px;
   height: auto;
 }
 
@@ -45,7 +45,34 @@ section {
   color: #fff;
   margin-bottom: 1.5rem;
   font-size: 23px;
+  margin-inline-start: 10px;
+  margin-inline-end: 15px;
+  position: relative;
+  padding-bottom: 10px;
 }
+
+.footer-content h4::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 40%; /* Half width of the element */
+  height: 3px; /* Thickness of the line */
+  background: linear-gradient(90deg, rgba(255,0,0,0.3), rgba(250,0,200,1), rgba(255,0,0,0.3));
+  background-size: 200% 100%;
+  animation: lighting 2s infinite;
+}
+
+@keyframes lighting {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+
 
 .footer-content li {
   margin-bottom: 16px;
@@ -81,7 +108,7 @@ section {
   line-height: 40px;
   border-radius: 50%;
   color: #ffffff;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 
 .footer-content .social-links a:hover {
@@ -94,14 +121,13 @@ footer {
   color: var(--text-color); /* White text color */
   text-align: center; /* Center the text */
   padding: 10px 0; /* Padding around the text */
-  position: fixed; /* Keep the footer at the bottom */
-  bottom: 0;
   width: 100%; /* Full width footer */
+  /* Removed position: fixed and bottom: 0 */
 }
 
 footer p {
-  margin: -10px; /* Remove margin from paragraph */
-  font-size: 14px; /* Font size */
+  margin: 0; /* Remove margin to avoid scrollbars */
+  font-size: 15px; /* Font size */
 }
 
 @media (max-width: 1690px) {

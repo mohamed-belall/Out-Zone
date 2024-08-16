@@ -249,6 +249,13 @@ nav ul li a:hover {
   padding: 0;
 }
 
+.head-service-title{
+  margin: 10px 0;
+  height: 90px;
+  display: grid;
+  align-items: center;
+}
+
 .service-title h1,
 .project-title h1 {
   /* font-family: "Cairo", sans-serif; */
@@ -289,12 +296,18 @@ nav ul li a:hover {
 
 .service img {
   width: 100%;
+  height: 180px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
 
+.AboAlaa .height{
+  height: 130px;
+  display: grid;
+  align-items: center;
+}
+
 .service h3 {
-  margin: 20px 0;
   font-size: 1.5em;
   color: var(--text-color);
 }
