@@ -121,14 +121,13 @@ footer {
   color: var(--text-color); /* White text color */
   text-align: center; /* Center the text */
   padding: 10px 0; /* Padding around the text */
-  position: fixed; /* Keep the footer at the bottom */
-  bottom: 0;
   width: 100%; /* Full width footer */
+  /* Removed position: fixed and bottom: 0 */
 }
 
 footer p {
-  margin: -10px; /* Remove margin from paragraph */
-  font-size: 14px; /* Font size */
+  margin: 0; /* Remove margin to avoid scrollbars */
+  font-size: 15px; /* Font size */
 }
 
 @media (max-width: 1690px) {
