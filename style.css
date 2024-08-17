@@ -186,10 +186,10 @@ nav ul li a:hover {
     /* Ensure it's above other elements */
   }
 
-  nav {
+  /* nav {
     display: none;
-    /* Hide navigation by default */
-  }
+   
+  } */
 
   nav ul {
     flex-direction: column;
