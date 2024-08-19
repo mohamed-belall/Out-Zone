@@ -1,392 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <link
-      rel="stylesheet"
-      href="style.css"
-    />
-    <link
-      rel="stylesheet"
-      href="footer.css"
-    />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    />
-    <title>مكتب هندسي</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="footer.css" />
 
-  <body>
-    <header>
-      <div class="container">
-        <a
-          href="#"
-          class="logo"
-        >
-          <img
-            src="images/logo.png"
-            alt="Logo"
-          />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <title>مكتب هندسي</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <a href="#" class="logo">
+        <img src="images/logo.png" alt="Logo" />
+      </a>
+      <a href="#" class="company-Name">
+        <div>out zone</div>
+      </a>
+
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <span class="bar1"></span>
+        <span class="bar2"></span>
+        <span class="bar3"></span>
+      </div>
+
+      <nav>
+        <ul id="menu">
+          <li class="dropdown">
+            <a href="Contact us/Contact-Us.html">تواصل معنا</a>
+          </li>
+          <li class="dropdown">
+            <a href="#">من نحن</a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-btn">
+              الخدمات
+              <span class="arrow">&#9662;</span>
+            </a>
+            <div class="dropdown-content">
+              <a href="#">تصميم كهربي</a>
+              <a href="#">تصميم معماري</a>
+              <a href="#">تصميم هندسي</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-btn">
+              المشاريع
+              <span class="arrow">&#9662;</span>
+            </a>
+            <div class="dropdown-content">
+              <a href="#">مستشفى ابو الريش</a>
+              <a href="#">مبنى سكني 1</a>
+              <a href="#">فيلا القاهره</a>
+            </div>
+          </li>
+          <li><a href="index.html">الرئيسيه</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="scroll-container">
+    <div class="scroll-item" style="background-image: url('images/hands-engineer.jpg')">
+      <p class="text">مكتب تصميم هندسي</p>
+    </div>
+  </div>
+
+  <div class="AboAlaa">
+    <div class="service-title">
+      <h1>خدماتنا</h1>
+    </div>
+    <section class="our-services">
+      <div class="service">
+        <img src="images/3.01.png" alt="Design Drawing" />
+        <div class="head-service-title">
+          <h3>Design Drawing</h3>
+        </div>
+        <div class="height">
+          <p>
+            مستشفي ابوالريش الجديدة الموجودة بالمنطقة الاستثمارية ب 6 اكتوبر
+            تم انشاء ذلك المشروع علي مساحة قدرها 88كم.
+          </p>
+        </div>
+        <a href="#" class="read-more">
+          READ MORE →
         </a>
-        <a
-          href="#"
-          class="company-Name"
-        >
-          <div>out zone</div>
+      </div>
+      <div class="service">
+        <img src="images/181152-IMG-20210929-WA0002.jpg" alt="Calculation" />
+        <div class="head-service-title">
+          <h3>
+            Calculation Depends
+            <br />
+            Design
+          </h3>
+        </div>
+        <div class="height">
+          <p>
+            مستشفي ابوالريش الجديدة الموجودة بالمنطقة الاستثمارية ب 6 اكتوبر
+            تم انشاء ذلك المشروع علي مساحة قدرها 88كم.
+          </p>
+        </div>
+        <a href="#" class="read-more">
+          READ MORE →
         </a>
-
-        <div
-          class="menu-toggle"
-          onclick="toggleMenu()"
-        >
-          <span class="bar1"></span>
-          <span class="bar2"></span>
-          <span class="bar3"></span>
-        </div>
-
-        <nav>
-          <ul id="menu">
-            <li class="dropdown">
-              <a href="Contact us/Contact-Us.html">تواصل معنا</a>
-            </li>
-            <li class="dropdown">
-              <a href="#">من نحن</a>
-            </li>
-            <li class="dropdown">
-              <a
-                href="#"
-                class="dropdown-btn"
-              >
-                الخدمات
-                <span class="arrow">&#9662;</span>
-              </a>
-              <div class="dropdown-content">
-                <a href="#">تصميم كهربي</a>
-                <a href="#">تصميم معماري</a>
-                <a href="#">تصميم هندسي</a>
-              </div>
-            </li>
-            <li class="dropdown">
-              <a
-                href="#"
-                class="dropdown-btn"
-              >
-                المشاريع
-                <span class="arrow">&#9662;</span>
-              </a>
-              <div class="dropdown-content">
-                <a href="#">مستشفى ابو الريش</a>
-                <a href="#">مبنى سكني 1</a>
-                <a href="#">فيلا القاهره</a>
-              </div>
-            </li>
-            <li><a href="index.html">الرئيسيه</a></li>
-          </ul>
-        </nav>
       </div>
-    </header>
-
-    <div class="scroll-container">
-      <div
-        class="scroll-item"
-        style="background-image: url('images/hands-engineer.jpg')"
-      >
-        <p class="text">مكتب تصميم هندسي</p>
-      </div>
-    </div>
-
-    <div class="AboAlaa">
-      <div class="service-title">
-        <h1>خدماتنا</h1>
-      </div>
-      <section class="our-services">
-        <div class="service">
-          <img
-            src="images/3.01.png"
-            alt="Design Drawing"
-          />
-          <div class="head-service-title">
-            <h3>Design Drawing</h3>
-          </div>
-          <div class="height">
-            <p>
-              مستشفي ابوالريش الجديدة الموجودة بالمنطقة الاستثمارية ب 6 اكتوبر
-              تم انشاء ذلك المشروع علي مساحة قدرها 88كم.
-            </p>
-          </div>
-          <a
-            href="#"
-            class="read-more"
-          >
-            READ MORE →
-          </a>
+      <div class="service">
+        <img src="images/180340-IMG-20210929-WA0001.jpg" alt="Tendering" />
+        <div class="head-service-title">
+          <h3>Tendering</h3>
         </div>
-        <div class="service">
-          <img
-            src="images/181152-IMG-20210929-WA0002.jpg"
-            alt="Calculation"
-          />
-          <div class="head-service-title">
-            <h3>
-              Calculation Depends
-              <br />
-              Design
-            </h3>
-          </div>
-          <div class="height">
-            <p>
-              مستشفي ابوالريش الجديدة الموجودة بالمنطقة الاستثمارية ب 6 اكتوبر
-              تم انشاء ذلك المشروع علي مساحة قدرها 88كم.
-            </p>
-          </div>
-          <a
-            href="#"
-            class="read-more"
-          >
-            READ MORE →
-          </a>
+        <div class="height">
+          <p>
+            Duo dolore et diam sed ipsum stet amet duo diam. Rebum amet ut
+            amet
+          </p>
         </div>
-        <div class="service">
-          <img
-            src="images/180340-IMG-20210929-WA0001.jpg"
-            alt="Tendering"
-          />
-          <div class="head-service-title">
-            <h3>Tendering</h3>
-          </div>
-          <div class="height">
-            <p>
-              Duo dolore et diam sed ipsum stet amet duo diam. Rebum amet ut
-              amet
-            </p>
-          </div>
-          <a
-            href="#"
-            class="read-more"
-          >
-            READ MORE →
-          </a>
-        </div>
-      </section>
-      <section class="our-services">
-        <div class="service">
-          <img
-            src="images/4.01.png"
-            alt="Shop Drawing"
-          />
-          <div class="head-service-title">
-            <h3>Shop Drawing</h3>
-          </div>
-          <div class="height">
-            <p>
-              Duo dolore et diam sed ipsum stet amet duo diam. Rebum amet ut
-              amet sed erat sed sed amet magna elitr amet kasd diam duo.
-            </p>
-          </div>
-          <a
-            href="#"
-            class="read-more"
-          >
-            READ MORE →
-          </a>
-        </div>
-        <div class="service">
-          <img
-            src="images/4.01.png"
-            alt="Calculation depends shop drawing"
-          />
-          <div class="head-service-title">
-            <h3>
-              Calculation Depends
-              <br />
-              Shop Drawing
-            </h3>
-          </div>
-          <div class="height">
-            <p>
-              Your new service description goes here. Explain the key points and
-              benefits of this service in a concise manner.
-            </p>
-          </div>
-          <a
-            href="#"
-            class="read-more"
-          >
-            READ MORE →
-          </a>
-        </div>
-      </section>
-    </div>
-
-    <div class="belal">
-      <div class="project-title"><h1>المشاريع</h1></div>
-      <div class="project-gallery">
-        <div class="filter-menu">
-          <button
-            class="filter-btn active"
-            data-filter="all"
-          >
-            كل المشاريع
-          </button>
-          <button
-            class="filter-btn"
-            data-filter="Electrical-projects"
-          >
-            المشاريع الكهربية
-          </button>
-          <button
-            class="filter-btn"
-            data-filter="Architectural-projects"
-          >
-            المشاريع المعمارية
-          </button>
-        </div>
-        <div class="projects">
-          <div
-            class="project"
-            data-category="Electrical-projects"
-          >
-            <div class="container">
-              <img
-                src="images/image.jpg"
-                alt="Electrical-projects"
-              />
-            </div>
-            <div class="project-info">
-              <h3>مستشفي أبو الريش</h3>
-              <p>123 Street, New York, USA</p>
-            </div>
-          </div>
-          <div
-            class="project"
-            data-category="Electrical-projects"
-          >
-            <div class="container">
-              <img
-                src="images/project-EUI.jpeg"
-                alt="Electrical-projects"
-              />
-            </div>
-            <div class="project-info">
-              <h3>جامعه مصر المعلوماتية</h3>
-              <p>123 Street, New York, USA</p>
-            </div>
-          </div>
-          <div
-            class="project"
-            data-category="Electrical-projects"
-          >
-            <div class="container">
-              <img
-                src="images/image.jpg"
-                alt="Electrical-projects"
-              />
-            </div>
-            <div class="project-info">
-              <h3>الجامعه العربيه</h3>
-              <p>123 Street, New York, USA</p>
-            </div>
-          </div>
-          <div
-            class="project"
-            data-category="Electrical-projects"
-          >
-            <div class="container">
-              <img
-                src="images/image.jpg"
-                alt="Electrical-projects"
-              />
-            </div>
-            <div class="project-info">
-              <h3>مصنع Slova</h3>
-              <p>123 Street, New York, USA</p>
-            </div>
-          </div>
-          <div
-            class="project"
-            data-category="Electrical-projects"
-          >
-            <div class="container">
-              <img
-                src="images/image.jpg"
-                alt="Electrical-projects"
-              />
-            </div>
-            <div class="project-info">
-              <h3>مستشفي تخصصي</h3>
-              <p>123 Street, New York, USA</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <section class="footer">
-      <!-- Logo and description -->
-      <div class="footer-content">
-        <div class="logo-container">
-          <a href="index.html">
-            <img
-              src="images/logo.png"
-              alt="logo"
-            />
-          </a>
-        </div>
-      </div>
-
-      <!-- Pages section -->
-      <div class="footer-content">
-        <h4>الصفحات</h4>
-        <li><a href="index.html">الصفحة الرئيسية</a></li>
-        <li><a href="#">من نحن</a></li>
-        <li><a href="#">الخدمات</a></li>
-        <li><a href="#">المشاريع</a></li>
-        <li><a href="Contact us/Contact-Us.html">تواصل معنا</a></li>
-      </div>
-
-      <!-- Project section -->
-      <div class="footer-content">
-        <h4>المشاريع</h4>
-        <li><a href="#">كل المشاريع</a></li>
-        <li><a href="#">مشاريع كهربائية</a></li>
-        <li><a href="#">مشاريع معمارية</a></li>
-      </div>
-
-      <!-- Help section -->
-      <div class="footer-content">
-        <h4>المساعدة</h4>
-        <li><a href="#">الخصوصية</a></li>
-        <li><a href="#">الشروط</a></li>
-        <li><a href="#">الأسئلة الشائعة</a></li>
-      </div>
-
-      <!-- Follow Us Section -->
-      <div class="footer-content">
-        <div class="social-links">
-          <h4>تابعنا</h4>
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-linkedin-in"></i></a>
-        </div>
+        <a href="#" class="read-more">
+          READ MORE →
+        </a>
       </div>
     </section>
-    <script src="file.js"></script>
-    <!-- <script src="script.js"></script> -->
-    <script src="script_project.js"></script>
-  </body>
-  <footer>
-    <p>&copy; 2024 Milio-Tech. All rights reserved.</p>
-  </footer>
+    <section class="our-services">
+      <div class="service">
+        <img src="images/4.01.png" alt="Shop Drawing" />
+        <div class="head-service-title">
+          <h3>Shop Drawing</h3>
+        </div>
+        <div class="height">
+          <p>
+            Duo dolore et diam sed ipsum stet amet duo diam. Rebum amet ut
+            amet sed erat sed sed amet magna elitr amet kasd diam duo.
+          </p>
+        </div>
+        <a href="#" class="read-more">
+          READ MORE →
+        </a>
+      </div>
+      <div class="service">
+        <img src="images/4.01.png" alt="Calculation depends shop drawing" />
+        <div class="head-service-title">
+          <h3>
+            Calculation Depends
+            <br />
+            Shop Drawing
+          </h3>
+        </div>
+        <div class="height">
+          <p>
+            Your new service description goes here. Explain the key points and
+            benefits of this service in a concise manner.
+          </p>
+        </div>
+        <a href="#" class="read-more">
+          READ MORE →
+        </a>
+      </div>
+    </section>
+  </div>
+
+  <div class="belal">
+    <div class="project-title">
+      <h1>المشاريع</h1>
+    </div>
+    <div class="project-gallery">
+      <div class="filter-menu">
+        <button class="filter-btn active" data-filter="all">
+          كل المشاريع
+        </button>
+        <button class="filter-btn" data-filter="Electrical-projects">
+          المشاريع الكهربية
+        </button>
+        <button class="filter-btn" data-filter="Architectural-projects">
+          المشاريع المعمارية
+        </button>
+      </div>
+      <div class="projects">
+        <div class="project" data-category="Electrical-projects">
+          <div class="container">
+            <img src="images/image.jpg" alt="Electrical-projects" />
+          </div>
+          <div class="project-info">
+            <h3>مستشفي أبو الريش</h3>
+            <p>123 Street, New York, USA</p>
+          </div>
+        </div>
+        <div class="project" data-category="Electrical-projects">
+          <div class="container">
+            <img src="images/project-EUI.jpeg" alt="Electrical-projects" />
+          </div>
+          <div class="project-info">
+            <h3>جامعه مصر المعلوماتية</h3>
+            <p>123 Street, New York, USA</p>
+          </div>
+        </div>
+        <div class="project" data-category="Electrical-projects">
+          <div class="container">
+            <img src="images/image.jpg" alt="Electrical-projects" />
+          </div>
+          <div class="project-info">
+            <h3>الجامعه العربيه</h3>
+            <p>123 Street, New York, USA</p>
+          </div>
+        </div>
+        <div class="project" data-category="Electrical-projects">
+          <div class="container">
+            <img src="images/image.jpg" alt="Electrical-projects" />
+          </div>
+          <div class="project-info">
+            <h3>مصنع Slova</h3>
+            <p>123 Street, New York, USA</p>
+          </div>
+        </div>
+        <div class="project" data-category="Electrical-projects">
+          <div class="container">
+            <img src="images/image.jpg" alt="Electrical-projects" />
+          </div>
+          <div class="project-info">
+            <h3>مستشفي تخصصي</h3>
+            <p>123 Street, New York, USA</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="footer">
+    <!-- Logo and description -->
+    <div class="footer-content">
+      <div class="logo-container">
+        <a href="index.html">
+          <img src="images/logo.png" alt="logo" />
+        </a>
+      </div>
+    </div>
+
+    <!-- Pages section -->
+    <div class="footer-content">
+      <h4>الصفحات</h4>
+      <li><a href="index.html">الصفحة الرئيسية</a></li>
+      <li><a href="#">من نحن</a></li>
+      <li><a href="#">الخدمات</a></li>
+      <li><a href="#">المشاريع</a></li>
+      <li><a href="Contact us/Contact-Us.html">تواصل معنا</a></li>
+    </div>
+
+    <!-- Project section -->
+    <div class="footer-content">
+      <h4>المشاريع</h4>
+      <li><a href="#">كل المشاريع</a></li>
+      <li><a href="#">مشاريع كهربائية</a></li>
+      <li><a href="#">مشاريع معمارية</a></li>
+    </div>
+
+    <!-- Help section -->
+    <div class="footer-content">
+      <h4>المساعدة</h4>
+      <li><a href="#">الخصوصية</a></li>
+      <li><a href="#">الشروط</a></li>
+      <li><a href="#">الأسئلة الشائعة</a></li>
+    </div>
+
+    <!-- Follow Us Section -->
+    <div class="footer-content">
+      <div class="social-links">
+        <h4>تابعنا</h4>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </section>
+  <script src="file.js"></script>
+  <!-- <script src="script.js"></script> -->
+  <script src="script_project.js"></script>
+</body>
+<footer>
+  <p>&copy; 2024 Milio-Tech. All rights reserved.</p>
+</footer>
+
 </html>
