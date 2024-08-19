@@ -299,14 +299,13 @@ nav ul li a:hover {
     font-size: 18px;
   }
 
-  nav ul li a:hover {
-    background-color: #b40000;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-  }
-
   .dropdown-content {
     position: static;
     background-color: #b40000;
+  }
+
+  .dropdown-btn {
+    font-size: 18px;
   }
 }
 

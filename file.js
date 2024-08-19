@@ -38,4 +38,20 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     }
   });
+
+  // Disable hover effect on mobile
+  function disableHoverOnMobile() {
+    if (window.innerWidth <= 768) {
+      document.querySelectorAll('.dropdown').forEach(dropdown => {
+        dropdown.classList.add('no-hover');
+      });
+    } else {
+      document.querySelectorAll('.dropdown').forEach(dropdown => {
+        dropdown.classList.remove('no-hover');
+      });
+    }
+  }
+
+  disableHoverOnMobile();
+  window.addEventListener('resize', disableHoverOnMobile);
 });
