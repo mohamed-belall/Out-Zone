@@ -152,16 +152,16 @@ nav ul li a:hover {
 /* Base Styles for Mobile */
 /* Base Styles for Mobile */
 /* Base Styles for Mobile */
-/* Mobile Styles */
-/* Mobile Styles */
-/* General Mobile Styles */
 @media (max-width: 768px) {
   header .container {
     display: flex;
     justify-content: space-between;
+    /* Align items horizontally */
     align-items: center;
     height: 70px;
+    /* Maintain a consistent header height */
     padding: 0 15px;
+    /* Add padding to the sides */
   }
 
   header .logo img {
@@ -173,6 +173,7 @@ nav ul li a:hover {
     text-align: center;
     margin-right: 70px;
     flex-grow: 1;
+    /* Allows the company name to take up available space */
   }
 
   .menu-toggle {
@@ -181,49 +182,57 @@ nav ul li a:hover {
     color: white;
     font-size: 24px;
     z-index: 1010;
+    /* Ensure it's above other elements */
   }
 
-  nav ul {
+  /* nav {
     display: none;
-    /* Hidden by default */
-    flex-direction: column-reverse;
+   
+  } */
+
+  nav ul {
+    flex-direction: column;
     align-items: flex-start;
     background-color: #0d2c47;
     width: 100%;
     height: auto;
     overflow: hidden;
     transition: height 0.3s ease-in-out;
-    /* Smooth transition for height */
     position: absolute;
     top: 70px;
+    /* Position below the header */
     left: 0;
     z-index: 1000;
   }
 
   nav ul.show {
     display: flex;
-    /* Show when menu is active */
+    /* Show the navigation items when menu is active */
+
   }
 
   nav ul li {
     width: 100%;
     text-align: left;
     padding: 0;
+    /* Remove padding to fit items in full width */
   }
 
   nav ul li a {
     padding: 10px 20px;
     font-size: 18px;
     color: white;
+    /* Ensure the text is visible */
     text-decoration: none;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    /* Remove underline */
   }
 
   nav ul li a:hover {
     background-color: #b40000;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    /* Highlight on hover */
   }
 
+  /* Hamburger Menu Icon */
   .menu-toggle span {
     display: block;
     width: 25px;
@@ -244,74 +253,15 @@ nav ul li a:hover {
   .menu-toggle.active .bar3 {
     transform: rotate(45deg) translate(-5px, -6px);
   }
-
-  .dropdown:hover .dropdown-content {
-    display: block;
-    position: relative;
-  }
-
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #b40000;
-    width: 100%;
-    top: 100%;
-    left: 0;
-    z-index: 1000;
-  }
-
-  .dropdown-content a {
-    padding: 10px 20px;
-    display: block;
-    text-align: center;
-    color: white;
-    text-decoration: none;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  }
-
-  .dropdown-content a:hover {
-    background-color: #b40000;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-  }
 }
 
-/* Adjustments for Very Small Screens */
-@media (max-width: 480px) {
-  header .logo img {
-    width: 78px;
-    height: 70px;
-  }
 
-  header .company-Name {
-    font-size: 20px;
-  }
-
+/* Show Menu Toggle on Small Screens */
+@media (max-width: 768px) {
   .menu-toggle {
-    font-size: 20px;
-  }
-
-  nav ul {
-    top: 60px;
-  }
-
-  nav ul li a {
-    padding: 8px 16px;
-    font-size: 18px;
-  }
-
-  nav ul li a:hover {
-    background-color: #b40000;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-  }
-
-  .dropdown-content {
-    position: static;
-    background-color: #b40000;
+    display: block;
   }
 }
-
-
-
 
 /* Horizontal Scroll Container */
 .scroll-container {
@@ -340,8 +290,8 @@ nav ul li a:hover {
   text-align: center;
   /* Center the text inside */
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), transparent),
-    url('images/crop-architect-opening-blueprint2.jpg');
-  animation: zoomBackground 10s infinite alternate ease-in-out;
+  
+  /* Animation for zoom */
 }
 
 .scroll-item .text {
@@ -778,7 +728,7 @@ textarea.input {
   text-decoration: none;
   list-style: none;
   /* font-family: "Work Sans", sans-serif; */
-}
+} 
 
 
 /* body {
@@ -831,11 +781,9 @@ section {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 40%;
-  /* Half width of the element */
-  height: 3px;
-  /* Thickness of the line */
-  background: linear-gradient(90deg, rgba(255, 0, 0, 0.3), rgba(250, 0, 200, 1), rgba(255, 0, 0, 0.3));
+  width: 40%; /* Half width of the element */
+  height: 3px; /* Thickness of the line */
+  background: linear-gradient(90deg, rgba(255,0,0,0.3), rgba(250,0,200,1), rgba(255,0,0,0.3));
   background-size: 200% 100%;
   animation: lighting 2s infinite;
 }
@@ -844,7 +792,6 @@ section {
   0% {
     background-position: 200% 0;
   }
-
   100% {
     background-position: -200% 0;
   }
@@ -896,22 +843,16 @@ section {
 
 footer {
   background: var(--primary-color);
-  color: var(--text-color);
-  /* White text color */
-  text-align: center;
-  /* Center the text */
-  padding: 10px 0;
-  /* Padding around the text */
-  width: 100%;
-  /* Full width footer */
+  color: var(--text-color); /* White text color */
+  text-align: center; /* Center the text */
+  padding: 10px 0; /* Padding around the text */
+  width: 100%; /* Full width footer */
   /* Removed position: fixed and bottom: 0 */
 }
 
 footer p {
-  margin: 0;
-  /* Remove margin to avoid scrollbars */
-  font-size: 15px;
-  /* Font size */
+  margin: 0; /* Remove margin to avoid scrollbars */
+  font-size: 15px; /* Font size */
 }
 
 @media (max-width: 1690px) {
