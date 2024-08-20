@@ -17,6 +17,7 @@ inputs.forEach((input) => {
   input.addEventListener("blur", blurFunc);
 });
 
+
 // document.getElementById('contact-form').addEventListener('submit', function(event) {
 //   event.preventDefault(); // Prevent form from submitting the traditional way
 
