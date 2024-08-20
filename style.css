@@ -312,6 +312,37 @@ nav ul li a:hover {
   }
 }
 
+/* Adjustments for Foldable Devices and Very Small Screens */
+@media (max-width: 350px) {
+  header .logo img {
+    width: 60px;
+    height: 60px;
+  }
+
+  header .company-Name {
+    font-size: 18px;
+    margin-right: 50px;
+  }
+
+  .menu-toggle {
+    font-size: 18px;
+  }
+
+  nav ul li a {
+    padding: 6px 12px;
+    font-size: 16px;
+  }
+
+  .dropdown-content a {
+    padding: 8px 16px;
+    font-size: 16px;
+  }
+
+  .dropdown-btn {
+    font-size: 16px;
+  }
+}
+
 
 /* Horizontal Scroll Container */
 .scroll-container {
@@ -395,6 +426,20 @@ nav ul li a:hover {
     /* Further reduce font size for very small screens */
     padding: 5px 8px;
     /* Adjust padding for very small screens */
+  }
+}
+
+@media (max-width: 360px) {
+  .scroll-item {
+    height: 220px;
+    /* Further reduce height for foldable or very small screens */
+  }
+
+  .scroll-item .text {
+    font-size: 0.7rem;
+    /* Further reduce font size for foldable or very small screens */
+    padding: 4px 6px;
+    /* Adjust padding for foldable or very small screens */
   }
 }
 
