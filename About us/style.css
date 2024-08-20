@@ -348,53 +348,43 @@
 
 /* Abo 3laa */
 .banner {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    height: 100%;
-    width: 100%;
-    background-color: #f5f5f5;
-    color: white;
-    padding: 220px 0;
-    text-align: center;
-    position: relative;
-    background: conic-gradient(from 297deg at bottom left, #051c6d 0%, #000cb7 20%, 
-    #005bd1 30%, #007a9b 40%, #4d056d 60%, #051c6d 71%);
-    animation: rotate 60s linear infinite;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100%;
+  width: 100%;
+  background-color: #f5f5f5;
+  color: white;
+  padding: 220px 0;
+  text-align: center;
+  position: relative;
+  background: conic-gradient(from 0deg at bottom left, #051c6d 0%, #000cb7 20%, 
+  #005bd1 30%, #007a9b 40%, #4d056d 60%, #051c6d 71%);
 }
 
 .banner h1 {
-    margin: 0;
-    font-size: 50px;
-    font-weight: bold;
+  margin: 0;
+  font-size: 50px;
+  font-weight: bold;
 }
 
 .breadcrumb {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: #ddd;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #ddd;
 }
 
 .breadcrumb a {
-    color: #ddd;
-    text-decoration: none;
+  color: #ddd;
+  text-decoration: none;
 }
 
 .breadcrumb a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .breadcrumb span {
-    margin: 0 10px;
-}
-
-@keyframes rotate {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
+  margin: 0 10px;
 }
