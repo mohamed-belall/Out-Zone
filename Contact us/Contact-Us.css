@@ -538,6 +538,13 @@ footer p {
     gap: 2.5rem;
   }
 }
+@media (max-width: 700px) {
+  .logo-container img {
+    padding-top: 50px;
+    width: 210px;
+    height: auto;
+}
+}
 
 :root {
   --primary-color: #121b25;
