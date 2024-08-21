@@ -159,6 +159,11 @@ footer p {
     grid-template-columns: repeat(auto-fit, minmax(150px, auto));
     gap: 2.5rem;
   }
+
+  .logo-container img {
+    width: 220px;
+    height: auto;
+  }
 }
 
 :root {

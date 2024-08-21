@@ -15,6 +15,7 @@ html {
 
 body {
   background-color: rgb(255, 255, 255);
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 ul {
@@ -38,6 +39,7 @@ header {
   top: 0;
   z-index: 100;
   background-color: #0d2c47;
+  width: 100%; /* Ensure header spans full width */
 }
 
 header .container {
@@ -84,6 +86,8 @@ nav ul {
 nav ul li {
   position: relative;
   padding-right: 30px;
+  padding: 0; /* Ensure no extra padding */
+  margin: 0; /* Ensure no extra margin */
 }
 
 nav ul li a {
@@ -247,6 +251,9 @@ nav ul li a:hover {
     transform: rotate(45deg) translate(-5px, -6px);
   }
 
+  .dropdown-btn {
+    font-size: 18px;
+  }
   .dropdown:hover .dropdown-content {
     display: block;
     position: relative;
@@ -312,10 +319,13 @@ nav ul li a:hover {
 }
 
 /* Adjustments for Foldable Devices and Very Small Screens */
-@media (max-width: 350px) {
+@media (max-width: 370px) {
+  .container {
+    width: 100vw;
+  }
   header .logo img {
-    width: 60px;
-    height: 60px;
+    width: 75px;
+    height: 67px;
   }
 
   header .company-Name {
@@ -589,7 +599,7 @@ nav ul li a:hover {
   background-color: #121b259b;
   border: none;
   color: #fff;
-  padding: 10px 20px;
+  padding: 10px 14px;
   font-weight: bold;
   margin: 0 10px;
   cursor: pointer;
