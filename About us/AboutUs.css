@@ -1,6 +1,6 @@
 
 /* Abo 3laa */
-.banner {
+.banner-3laa {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
@@ -15,29 +15,87 @@
   #005bd1 30%, #007a9b 40%, #4d056d 60%, #051c6d 71%);
 }
 
-.banner h1 {
+.banner-3laa h1 {
   margin: 0;
   font-size: 50px;
   font-weight: bold;
 }
 
-.breadcrumb {
+.page-wrap-3laa {
+  
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  padding: 20px; /* Add padding to prevent content from touching the edges */
+}
+
+.page-wrap-3laa .outer-container {
+  justify-content:space-around;
+  align-items: center;
+  min-height: 60vh;
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  max-width: 1300px;
+  background-color: #d19600; /* Light gray background */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Padding inside the outer container */
+  box-sizing: border-box;
+}
+
+.page-wrap-3laa .text-container {
+  position: relative;
+  left: 90px;
+  width: 38%;
+  padding: 27px; /* Add padding inside the box */
+  background-color: #eee; /* Slightly lighter gray background */
+  border-radius: 10px; /* Rounded corners */
+  margin-right: 20px; /* Space between text and video */
+  box-sizing: border-box;
+}
+
+.page-wrap-3laa .text-container p{
+  line-height: 25px;
+}
+
+.page-wrap-3laa .container {
+  
+  width: 40%; /* Adjusted width for the video container */
+  min-width: 200px;
+  box-sizing: border-box;
+}
+
+.page-wrap-3laa .video-container{
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.page-wrap-3laa .video-container iframe {
   position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  color: #ddd;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
-.breadcrumb a {
-  color: #ddd;
-  text-decoration: none;
-}
+@media (max-width: 768px) {
+  .page-wrap-3laa .outer-container {
+      flex-direction: column; /* Stack the text and video vertically */
+  }
 
-.breadcrumb a:hover {
-  text-decoration: underline;
-}
+  .page-wrap-3laa .text-container {
+      width: 100%; /* Full width for smaller screens */
+      margin-right: 0;
+      margin-bottom: 20px; /* Space between text and video */
+  }
 
-.breadcrumb span {
-  margin: 0 10px;
+  .page-wrap-3laa .container {
+      width: 60%; /* Full width for smaller screens */
+  }
 }

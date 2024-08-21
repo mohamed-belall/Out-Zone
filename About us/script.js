@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const banner = document.querySelector(".banner");
+    const banner = document.querySelector(".banner-3laa");
     let degree = 0;
 
     setInterval(() => {
