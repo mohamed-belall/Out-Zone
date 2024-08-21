@@ -31,7 +31,6 @@ ul {
   padding-right: 15px;
 }
 
-
 /* Header Styling */
 header {
   height: 70px;
@@ -343,7 +342,6 @@ nav ul li a:hover {
   }
 }
 
-
 /* Horizontal Scroll Container */
 .scroll-container {
   overflow-x: auto;
@@ -371,7 +369,7 @@ nav ul li a:hover {
   text-align: center;
   /* Center the text inside */
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), transparent),
-    url('images/crop-architect-opening-blueprint2.jpg');
+    url("images/crop-architect-opening-blueprint2.jpg");
   animation: zoomBackground 10s infinite alternate ease-in-out;
   /* Animation for zoom */
 }
