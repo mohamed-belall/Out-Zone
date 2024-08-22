@@ -1,58 +1,145 @@
-let slider = document.querySelector('.slider .list');
-let items = document.querySelectorAll('.slider .list .item');
-let next = document.getElementById('next');
-let prev = document.getElementById('prev');
-let dots = document.querySelectorAll('.slider .dots li');
-let indicators = document.querySelectorAll('.carousel-indicators button');
+// Function definition remains the same as provided earlier
+function initializeSlider({
+    sliderContainerSelector,
+    listSelector = '.list',
+    itemSelector = '.item',
+    nextButtonSelector = '#next',
+    prevButtonSelector = '#prev',
+    dotsSelector = '.dots li',
+    indicatorsSelector = '.carousel-indicators button',
+    interval = 3000
+}) {
+    document.querySelectorAll(sliderContainerSelector).forEach(sliderContainer => {
+        let slider = sliderContainer.querySelector(listSelector);
+        let items = sliderContainer.querySelectorAll(itemSelector);
+        let next = sliderContainer.querySelector(nextButtonSelector);
+        let prev = sliderContainer.querySelector(prevButtonSelector);
+        let dots = sliderContainer.querySelectorAll(dotsSelector);
+        let indicators = document.querySelectorAll(indicatorsSelector); // Use global document query
 
-let lengthItems = items.length - 1;
-let active = 0;
+        let lengthItems = items.length - 1;
+        let active = 0;
+        let refreshInterval;
+        let direction = 'right'; // Default direction
 
-function reloadSlider() {
-    slider.style.left = -items[active].offsetLeft + 'px';
+        function reloadSlider() {
+            console.log('Reloading slider to index:', active);
 
-    // Update dots
-    document.querySelector('.slider .dots li.active').classList.remove('active');
-    dots[active].classList.add('active');
+            slider.style.left = -items[active].offsetLeft + 'px';
 
-    // Update carousel indicators
-    document.querySelector('.carousel-indicators button.active').classList.remove('active');
-    indicators[active].classList.add('active');
+            // Update dots
+            let currentDot = sliderContainer.querySelector(`${dotsSelector}.active`);
+            if (currentDot) {
+                currentDot.classList.remove('active');
+            }
+            if (dots[active]) {
+                dots[active].classList.add('active');
+            }
 
-    resetInterval();
-}
+            // Update carousel indicators
+            let currentIndicator = document.querySelector(`${indicatorsSelector}.active`);
+            if (currentIndicator) {
+                currentIndicator.classList.remove('active');
+            }
+            if (indicators[active]) {
+                indicators[active].classList.add('active');
+            }
 
-function resetInterval() {
-    clearInterval(refreshInterval);
-    refreshInterval = setInterval(() => next.click(), 3000);
-}
+            resetInterval();
+        }
 
-next.onclick = function() {
-    active = active + 1 <= lengthItems ? active + 1 : 0;
-    reloadSlider();
-}
+        function resetInterval() {
+            clearInterval(refreshInterval);
+            refreshInterval = setInterval(() => {
+                if (direction === 'right') {
+                    next.click();
+                } else {
+                    prev.click();
+                }
+            }, interval);
+        }
 
-prev.onclick = function() {
-    active = active - 1 >= 0 ? active - 1 : lengthItems;
-    reloadSlider();
-}
+        next.onclick = function () {
+            direction = 'right'; // Update direction to right
+            active = (active + 1) <= lengthItems ? (active + 1) : 0;
+            console.log('Next clicked, setting active to:', active);
+            reloadSlider();
+        }
 
-dots.forEach((li, key) => {
-    li.addEventListener('click', () => {
-        active = key;
-        reloadSlider();
+        prev.onclick = function () {
+            direction = 'left'; // Update direction to left
+            active = (active - 1) >= 0 ? (active - 1) : lengthItems;
+            console.log('Previous clicked, setting active to:', active);
+            reloadSlider();
+        }
+
+        dots.forEach((li, key) => {
+            li.addEventListener('click', () => {
+                active = key;
+                console.log('Dot clicked, setting active to:', active);
+                reloadSlider();
+            });
+        });
+
+        indicators.forEach((indicator, key) => {
+            indicator.addEventListener('click', () => {
+                active = key;
+                console.log('Indicator clicked, setting active to:', active);
+                reloadSlider();
+            });
+        });
+
+        window.onresize = function () {
+            reloadSlider();
+        };
+
+        // Initialize the slider with the default interval
+        resetInterval();
     });
+}
+
+// Call the function with different parameters
+initializeSlider({
+    sliderContainerSelector: '.slider1',
+    nextButtonSelector: '#next1',
+    prevButtonSelector: '#prev1',
+    dotsSelector: '.dots1 li',
+    indicatorsSelector: '.carousel-indicators1 button',
+    interval: 5000
 });
 
-indicators.forEach((indicator, key) => {
-    indicator.addEventListener('click', () => {
-        active = key;
-        reloadSlider();
-    });
+initializeSlider({
+    sliderContainerSelector: '.slider2',
+    nextButtonSelector: '#next2',
+    prevButtonSelector: '#prev2',
+    dotsSelector: '.dots2 li',
+    indicatorsSelector: '.carousel-indicators2 button',
+    interval: 5000
 });
 
-window.onresize = function(event) {
-    reloadSlider();
-};
+initializeSlider({
+    sliderContainerSelector: '.slider3',
+    nextButtonSelector: '#next3',
+    prevButtonSelector: '#prev3',
+    dotsSelector: '.dots3 li',
+    indicatorsSelector: '.carousel-indicators3 button',
+    interval: 5000
+});
 
-let refreshInterval = setInterval(() => next.click(), 3000);
+initializeSlider({
+    sliderContainerSelector: '.slider4',
+    nextButtonSelector: '#next4',
+    prevButtonSelector: '#prev4',
+    dotsSelector: '.dots4 li',
+    indicatorsSelector: '.carousel-indicators4 button',
+    interval: 5000
+});
+
+initializeSlider({
+    sliderContainerSelector: '.slider5',
+    nextButtonSelector: '#next5',
+    prevButtonSelector: '#prev5',
+    dotsSelector: '.dots5 li',
+    indicatorsSelector: '.carousel-indicators5 button',
+    interval: 5000
+});
