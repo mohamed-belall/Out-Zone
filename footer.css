@@ -60,7 +60,12 @@ section {
   /* Half width of the element */
   height: 3px;
   /* Thickness of the line */
-  background: linear-gradient(90deg, rgba(255, 0, 0, 0.3), rgba(250, 0, 200, 1), rgba(255, 0, 0, 0.3));
+  background: linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 0.3),
+    rgba(250, 0, 200, 1),
+    rgba(255, 0, 0, 0.3)
+  );
   background-size: 200% 100%;
   animation: lighting 2s infinite;
 }
@@ -74,8 +79,6 @@ section {
     background-position: -200% 0;
   }
 }
-
-
 
 .footer-content li {
   margin-bottom: 16px;
