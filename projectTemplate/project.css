@@ -14,7 +14,14 @@
   color: white;
 }
 
-.slider1, .slider2, .slider3, .slider4 {
+.slider1,
+.slider2,
+.slider3,
+.slider4,
+.slider5,
+.slider6,
+.slider7,
+.slider8 {
   width: 1000px;
   max-width: 100vw;
   height: 470px;
@@ -46,7 +53,14 @@
   }
 }
 
-.slider1 .list, .slider2 .list, .slider3 .list, .slider4 .list {
+.slider1 .list,
+.slider2 .list,
+.slider3 .list,
+.slider4 .list,
+.slider5 .list,
+.slider6 .list,
+.slider7 .list,
+.slider8 .list {
   position: absolute;
   width: max-content;
   height: 100%;
@@ -56,20 +70,41 @@
   transition: 1s;
 }
 
-.slider1 .list .item, .slider2 .list .item, .slider3 .list .item, .slider4 .list .item {
+.slider1 .list .item,
+.slider2 .list .item,
+.slider3 .list .item,
+.slider4 .list .item,
+.slider5 .list .item,
+.slider6 .list .item,
+.slider7 .list .item,
+.slider8 .list .item {
   position: relative; /* Positioning context for text-container */
   width: 100%;
   height: 100%;
 }
 
-.slider1 .list img, .slider2 .list img, .slider3 .list img, .slider4 .list img {
+.slider1 .list img,
+.slider2 .list img,
+.slider3 .list img,
+.slider4 .list img,
+.slider5 .list img,
+.slider6 .list img,
+.slider7 .list img,
+.slider8 .list img {
   width: 1300px;
   max-width: 100vw;
   height: 100%;
   object-fit: cover;
 }
 
-.slider1 .text-container, .slider2 .text-container, .slider3 .text-container, .slider4 .text-container {
+.slider1 .text-container,
+.slider2 .text-container,
+.slider3 .text-container,
+.slider4 .text-container,
+.slider5 .text-container,
+.slider6 .text-container,
+.slider7 .text-container,
+.slider8 .text-container {
   position: absolute;
   bottom: 20px; /* Position it 20px from the bottom */
   left: 20px; /* Position it 20px from the left */
@@ -84,25 +119,58 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.slider1 .text-container h2, .slider1 .text-container p,
-.slider2 .text-container h2, .slider2 .text-container p,
-.slider3 .text-container h2, .slider3 .text-container p,
-.slider4 .text-container h2, .slider4 .text-container p {
+.slider1 .text-container h2,
+.slider1 .text-container p,
+.slider2 .text-container h2,
+.slider2 .text-container p,
+.slider3 .text-container h2,
+.slider3 .text-container p,
+.slider4 .text-container h2,
+.slider4 .text-container p,
+.slider5 .text-container h2,
+.slider5 .text-container p,
+.slider6 .text-container h2,
+.slider6 .text-container p,
+.slider7 .text-container h2,
+.slider7 .text-container p,
+.slider8 .text-container h2,
+.slider8 .text-container p {
   margin: 0;
   padding: 0;
   font-family: cursive;
 }
 
-.slider1 .text-container h2, .slider2 .text-container h2, .slider3 .text-container h2, .slider4 .text-container h2 {
+.slider1 .text-container h2,
+.slider2 .text-container h2,
+.slider3 .text-container h2,
+.slider4 .text-container h2,
+.slider5 .text-container h2,
+.slider6 .text-container h2,
+.slider7 .text-container h2,
+.slider8 .text-container h2 {
   font-size: 24px;
   margin-bottom: 10px;
 }
 
-.slider1 .text-container p, .slider2 .text-container p, .slider3 .text-container p, .slider4 .text-container p {
+.slider1 .text-container p,
+.slider2 .text-container p,
+.slider3 .text-container p,
+.slider4 .text-container p,
+.slider5 .text-container p,
+.slider6 .text-container p,
+.slider7 .text-container p,
+.slider8 .text-container p {
   font-size: 16px;
 }
 
-.slider1 .buttons, .slider2 .buttons, .slider3 .buttons, .slider4 .buttons {
+.slider1 .buttons,
+.slider2 .buttons,
+.slider3 .buttons,
+.slider4 .buttons,
+.slider5 .buttons,
+.slider6 .buttons,
+.slider7 .buttons,
+.slider8 .buttons {
   position: absolute;
   top: 40%;
   left: 5%;
@@ -111,7 +179,14 @@
   justify-content: space-between;
 }
 
-.slider1 .buttons button, .slider2 .buttons button, .slider3 .buttons button, .slider4 .buttons button {
+.slider1 .buttons button,
+.slider2 .buttons button,
+.slider3 .buttons button,
+.slider4 .buttons button,
+.slider5 .buttons button,
+.slider6 .buttons button,
+.slider7 .buttons button,
+.slider8 .buttons button {
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -122,7 +197,14 @@
   font-weight: bold;
 }
 
-.slider1 .dots1, .slider2 .dots2, .slider3 .dots3, .slider4 .dots4 {
+.slider1 .dots1,
+.slider2 .dots2,
+.slider3 .dots3,
+.slider4 .dots4,
+.slider5 .dots5,
+.slider6 .dots6,
+.slider7 .dots7,
+.slider8 .dots8 {
   position: absolute;
   bottom: 10px;
   left: 0;
@@ -134,7 +216,14 @@
   justify-content: center;
 }
 
-.slider1 .dots1 li, .slider2 .dots2 li, .slider3 .dots3 li, .slider4 .dots4 li {
+.slider1 .dots1 li,
+.slider2 .dots2 li,
+.slider3 .dots3 li,
+.slider4 .dots4 li,
+.slider5 .dots5 li,
+.slider6 .dots6 li,
+.slider7 .dots7 li,
+.slider8 .dots8 li {
   list-style: none;
   width: 10px;
   height: 10px;
@@ -144,19 +233,40 @@
   transition: 0.5s;
 }
 
-.slider1 .dots1 li.active, .slider2 .dots2 li.active, .slider3 .dots3 li.active, .slider4 .dots4 li.active {
+.slider1 .dots1 li.active,
+.slider2 .dots2 li.active,
+.slider3 .dots3 li.active,
+.slider4 .dots4 li.active,
+.slider5 .dots5 li.active,
+.slider6 .dots6 li.active,
+.slider7 .dots7 li.active,
+.slider8 .dots8 li.active {
   width: 30px;
 }
 
 /************** carousel-indicators1 ************************/
-.carousel-indicators1, .carousel-indicators2, .carousel-indicators3, .carousel-indicators4 {
+.carousel-indicators1,
+.carousel-indicators2,
+.carousel-indicators3,
+.carousel-indicators4,
+.carousel-indicators5,
+.carousel-indicators6,
+.carousel-indicators7,
+.carousel-indicators8 {
   display: flex;
   justify-content: center;
   margin-top: 10px;
   margin-bottom: 100px;
 }
 
-.carousel-indicators1 button, .carousel-indicators2 button, .carousel-indicators3 button, .carousel-indicators4 button {
+.carousel-indicators1 button,
+.carousel-indicators2 button,
+.carousel-indicators3 button,
+.carousel-indicators4 button,
+.carousel-indicators5 button,
+.carousel-indicators6 button,
+.carousel-indicators7 button,
+.carousel-indicators8 button {
   border: none;
   background: none;
   cursor: pointer;
@@ -167,7 +277,14 @@
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
 }
 
-.carousel-indicators1 img, .carousel-indicators2 img, .carousel-indicators3 img, .carousel-indicators4 img {
+.carousel-indicators1 img,
+.carousel-indicators2 img,
+.carousel-indicators3 img,
+.carousel-indicators4 img,
+.carousel-indicators5 img,
+.carousel-indicators6 img,
+.carousel-indicators7 img,
+.carousel-indicators8 img {
   width: 70px; /* Adjusted for frame */
   height: 70px;
   object-fit: cover;
@@ -178,7 +295,14 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow inside the frame for depth */
 }
 
-.carousel-indicators1 .active img, .carousel-indicators2 .active img, .carousel-indicators3 .active img, .carousel-indicators4 .active img {
+.carousel-indicators1 .active img,
+.carousel-indicators2 .active img,
+.carousel-indicators3 .active img,
+.carousel-indicators4 .active img,
+.carousel-indicators5 .active img,
+.carousel-indicators6 .active img,
+.carousel-indicators7 .active img,
+.carousel-indicators8 .active img {
   opacity: 1;
   transform: scale(1.1); /* Slight zoom effect for active image */
   border-color: #ffd700; /* Golden border for active image */
@@ -187,7 +311,14 @@
 
 /**************************************/
 @media screen and (max-width: 768px) {
-  .slider1, .slider2, .slider3, .slider4 {
+  .slider1,
+  .slider2,
+  .slider3,
+  .slider4,
+  .slider5,
+  .slider6,
+  .slider7,
+  .slider8 {
     height: 400px;
   }
 
