@@ -59,7 +59,7 @@
   line-height: 25px;
 }
 
-.page-wrap-3laa .container {
+.page-wrap-3laa .banner-container {
   
   width: 40%; /* Adjusted width for the video container */
   min-width: 200px;
@@ -94,7 +94,7 @@
       margin-bottom: 20px; /* Space between text and video */
   }
 
-  .page-wrap-3laa .container {
+  .page-wrap-3laa .banner-container {
       width: 60%; /* Full width for smaller screens */
   }
 }
@@ -117,7 +117,7 @@
   padding-bottom: 40px;
 }
 
-.Abo-3laa-card .container{
+.Abo-3laa-card .card-container{
   display: flex;
   align-items: flex-start;
   justify-content: center;
