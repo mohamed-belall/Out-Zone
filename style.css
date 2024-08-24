@@ -282,7 +282,6 @@ nav ul li a:hover {
   .dropdown-content a:hover {
     background-color: #b40000;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    
   }
 }
 
@@ -628,6 +627,10 @@ nav ul li a:hover {
   gap: 20px;
   justify-content: center;
 }
+.projects a {
+  padding: 0;
+  margin: 0;
+}
 
 .project {
   background-color: #fbae17;
@@ -680,12 +683,13 @@ nav ul li a:hover {
 
 .project-info {
   padding: 20px;
+  direction: rtl;
 }
 
 .project-info h3 {
   margin: 0;
   color: #ffffff;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 .project-info p {
