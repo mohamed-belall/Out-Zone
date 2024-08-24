@@ -240,7 +240,7 @@
   background: #f7f5ec;
 }
 
-@media(max-width: 720px){
+@media(max-width: 1024px){
   .Abo-3laa-card .card-container{
       align-items: center;
       flex-direction: column;
