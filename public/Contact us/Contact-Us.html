@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="Contact-Us.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="Contact-Us.js" />
+
+  <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <a href="../index.html" class="logo">
+        <img src="../images/logo.png" alt="Logo" />
+      </a>
+      <a href="../index.html" class="company-Name">
+        <div>out zone</div>
+      </a>
+
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <span class="bar1"></span>
+        <span class="bar2"></span>
+        <span class="bar3"></span>
+      </div>
+
+      <nav>
+        <ul id="menu">
+          <li class="dropdown">
+            <a href="Contact-Us.html">تواصل معنا</a>
+          </li>
+          <li class="dropdown">
+            <a href="../About us/AboutUs.html">من نحن</a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-btn">
+              الخدمات
+              <span class="arrow">&#9662;</span>
+            </a>
+            <div class="dropdown-content">
+              <a href="#">تصميم كهربي</a>
+              <a href="#">تصميم معماري</a>
+              <a href="#">تصميم هندسي</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-btn">
+              المشاريع
+              <span class="arrow">&#9662;</span>
+            </a>
+            <div class="dropdown-content">
+              <a href="#">مستشفى ابو الريش</a>
+              <a href="#">مبنى سكني 1</a>
+              <a href="#">فيلا القاهره</a>
+            </div>
+          </li>
+          <li><a href="../index.html">الرئيسيه</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="scroll-container">
+    <div class="scroll-item" style="background-image: url('../images/hands-engineer.jpg')">
+      <p class="text">مكتب تصميم هندسي</p>
+    </div>
+  </div>
+
+  <div class="container-body">
+    <div class="form">
+      <div class="contact-info">
+        <h3 class="title">Let's get in touch</h3>
+        <p class="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+          dolorum adipisci recusandae praesentium dicta!
+        </p>
+
+        <div class="info">
+          <div class="information">
+            <img src="../images/email.png" class="icon" alt="" />
+            <p>lorem@ipsum.com</p>
+          </div>
+          <div class="information">
+            <img src="../images/phone.png" class="icon" alt="" />
+            <p>123-456-789</p>
+          </div>
+        </div>
+
+        <!-- social-media -->
+        <div class="social-media">
+          <p>Connect with us :</p>
+          <div class="social-icons">
+            <a href="#">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Start Form -->
+      <div class="contact-form">
+        <span class="circle one"></span>
+        <span class="circle two"></span>
+
+        <form autocomplete="off">
+          <h3 class="title">Contact us</h3>
+
+          <!-- Username -->
+          <input type="hidden" name="access_key" value="d1f427fa-8de1-409d-9078-e92478ee0c39" />
+          <div class="input-container">
+            <input type="text" name="name" class="input" required />
+            <label for="">Username</label>
+            <span>Username</span>
+          </div>
+          <!-- Email -->
+          <div class="input-container">
+            <input type="email" name="email" class="input" required />
+            <label for="">Email</label>
+            <span>Email</span>
+          </div>
+          <!-- Phone -->
+          <div class="input-container">
+            <input type="tel" name="phone" class="input" required />
+            <label for="">Phone</label>
+            <span>Phone</span>
+          </div>
+          <!-- Subject -->
+          <div class="input-container">
+            <input type="text" name="subject" class="input" required />
+            <label for="">Subject</label>
+            <span>Subject</span>
+          </div>
+
+          <!-- Message -->
+          <div class="input-container textarea">
+            <textarea name="message" class="input" required></textarea>
+            <label for="">Message</label>
+            <span>Message</span>
+          </div>
+          <!-- submit -->
+          <input type="submit" value="Send" class="btn" />
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- End Form -->
+  <section class="footer">
+    <!-- Logo and description -->
+    <div class="footer-content">
+      <div class="logo-container">
+        <a href="../index.html">
+          <img src="../images/logo.png" alt="logo" />
+        </a>
+      </div>
+    </div>
+
+    <!-- Pages section -->
+    <div class="footer-content">
+      <h4>الصفحات</h4>
+      <li><a href="../index.html">الصفحة الرئيسية</a></li>
+      <li><a href="#">من نحن</a></li>
+      <li><a href="#">الخدمات</a></li>
+      <li><a href="#">المشاريع</a></li>
+      <li><a href="Contact-Us.html">تواصل معنا</a></li>
+    </div>
+
+    <!-- Project section -->
+    <div class="footer-content">
+      <h4>المشاريع</h4>
+      <li><a href="#">كل المشاريع</a></li>
+      <li><a href="#">مشاريع كهربائية</a></li>
+      <li><a href="#">مشاريع معمارية</a></li>
+    </div>
+
+    <!-- Help section -->
+    <div class="footer-content">
+      <h4>المساعدة</h4>
+      <li><a href="#">الخصوصية</a></li>
+      <li><a href="#">الشروط</a></li>
+      <li><a href="#">الأسئلة الشائعة</a></li>
+    </div>
+
+    <!-- Follow Us Section -->
+    <div class="footer-content">
+      <div class="social-links">
+        <h4>تابعنا</h4>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+<footer>
+  <p>&copy; 2024 Milio-Tech. All rights reserved.</p>
+</footer>
+
+<script src="../file.js"></script>
+<script src="Contact-Us.js"></script>
+
+</html>
