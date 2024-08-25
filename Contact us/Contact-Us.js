@@ -40,6 +40,7 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
   window.open(whatsappURL, '_blank');
 });
 
+
 // document.getElementById('contact-form').addEventListener('submit', function(event) {
 //   event.preventDefault(); // Prevent form from submitting the traditional way
 
