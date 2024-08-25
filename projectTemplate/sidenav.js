@@ -18,3 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+document.getElementById("sidenavToggle").addEventListener("click", function () {
+  var sidenav = document.getElementById("mySidenav");
+  sidenav.classList.toggle("open");
+});
