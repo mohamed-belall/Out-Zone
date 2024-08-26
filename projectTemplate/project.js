@@ -104,7 +104,7 @@ function initializeSlider({
     });
 }
 
-// Call the function with different parameters
+  // Call the function with different parameters
 initializeSlider({
   sliderContainerSelector: ".slider1",
   nextButtonSelector: "#next1",
