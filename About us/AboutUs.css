@@ -86,12 +86,15 @@
 @media (max-width: 768px) {
   .page-wrap-3laa .outer-container {
       flex-direction: column; /* Stack the text and video vertically */
+      height: 100%;
   }
 
   .page-wrap-3laa .text-container {
       width: 100%; /* Full width for smaller screens */
+      max-height: 75%;
       margin-right: 0;
       margin-bottom: 20px; /* Space between text and video */
+      overflow: hidden;
   }
 
   .page-wrap-3laa .banner-container {
@@ -118,7 +121,7 @@
 
 .Abo-3laa-card .card-container{
   display: flex;
-  align-items: flex-start;
+  align-items: stretch; /* Ensure all items stretch to the same height */
   justify-content: center;
   width: 100%;
   min-height: 300px;
