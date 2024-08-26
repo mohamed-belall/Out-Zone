@@ -34,7 +34,7 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
   const encodedMessage = encodeURIComponent(whatsappMessage);
 
   // Define the WhatsApp API URL (replace '1234567890' with the actual phone number)
-  const whatsappURL = `https://wa.me/+201118391368?text=${encodedMessage}`;
+  const whatsappURL = `https://wa.me/+201021387252?text=${encodedMessage}`;
 
   // Open WhatsApp with the pre-filled message
   window.open(whatsappURL, '_blank');
