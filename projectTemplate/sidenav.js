@@ -1,7 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
   const navLinks = document.querySelectorAll(".sidenav .nav-link");
   const contentSections = document.querySelectorAll(".content-section");
+  const sidenavToggle = document.getElementById("sidenavToggle");
+  const sidenav = document.querySelector(".sidenav");
 
+  // Handle click on navigation links
   navLinks.forEach((link) => {
     link.addEventListener("click", function (e) {
       e.preventDefault();
@@ -14,11 +17,34 @@ document.addEventListener("DOMContentLoaded", function () {
       const contentId = this.getAttribute("data-content");
       document.getElementById(contentId).classList.add("active");
       this.classList.add("active");
+
+      // Close sidenav after a link is clicked (for mobile view)
+      if (window.innerWidth <= 768) {
+        // Adding a slight delay to allow transition
+        setTimeout(() => {
+          sidenav.classList.remove("open");
+          sidenavToggle.innerHTML = '&#9664;'; // Left arrow
+        }, 300); // Delay must match the CSS transition duration
+      }
     });
   });
-});
 
-document.getElementById("sidenavToggle").addEventListener("click", function () {
-  var sidenav = document.getElementById("mySidenav");
-  sidenav.classList.toggle("open");
+  // Handle click on the sidenav toggle button
+  sidenavToggle.addEventListener("click", function () {
+    sidenav.classList.toggle("open");
+
+    // Update the arrow direction based on the sidenav state
+    if (sidenav.classList.contains("open")) {
+      sidenavToggle.innerHTML = '&#9654;'; // Right arrow
+    } else {
+      sidenavToggle.innerHTML = '&#9664;'; // Left arrow
+    }
+  });
+
+  // Initial setup: Set arrow direction based on the current state of the sidenav
+  if (sidenav.classList.contains("open")) {
+    sidenavToggle.innerHTML = '&#9654;'; // Right arrow
+  } else {
+    sidenavToggle.innerHTML = '&#9664;'; // Left arrow
+  }
 });
