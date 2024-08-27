@@ -660,6 +660,18 @@ nav ul li a:hover {
   -o-transition: transform 0.6s, box-shadow 0.3s;
 }
 
+
+@media (max-width: 480px) {
+  .projects{
+    margin-left: -10px;
+  }
+  .projects a{
+    margin: 4px 16px;
+  }
+}
+
+
+
 .project:hover {
   transform: scale(110%);
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);

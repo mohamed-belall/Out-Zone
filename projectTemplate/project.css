@@ -486,6 +486,7 @@ body::before {
 
   .project-type-name {
     width: 190px;
+    left: 35%;
   }
 }
 @media screen and (max-width: 480px) {
@@ -505,6 +506,6 @@ body::before {
     width: 134px;
     font-size: 20px;
     position: relative;
-    left: 37%;
+    left: 34%;
   }
 }
