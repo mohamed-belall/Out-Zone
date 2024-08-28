@@ -35,6 +35,20 @@ body::before {
   box-shadow: 0px 0px 12px 1px #004eff;
   color: white;
 }
+.project-type{
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: -65px;
+  margin-top: 93px;
+  font-weight: bold;
+  background-color: #96a0ae;
+  width: 224px;
+  position: relative;
+  left: 0;
+  border: 2px solid black;
+  box-shadow: 0px 0px 12px 1px #004eff;
+  color: white;
+}
 
 .slider1,
 .slider2,
@@ -484,9 +498,17 @@ body::before {
     height: 400px;
   }
 
+  .project-type
   .project-type-name {
     width: 190px;
     left: 35%;
+  }
+
+  .project-type{
+    width: 190px;
+    left: 0;
+    border-radius: 10px;
+    margin-bottom: -15px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -502,10 +524,18 @@ body::before {
     width: 88%;
   }
 
-  .project-type-name {
+  .project-type-name{
     width: 134px;
     font-size: 20px;
     position: relative;
     left: 34%;
+  }
+  .project-type{
+    width: 134px;
+    font-size: 20px;
+    position: relative;
+    left: 0;
+    border-radius: 10px;
+    margin-bottom: -42px;
   }
 }
