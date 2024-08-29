@@ -681,19 +681,12 @@ nav ul li a:hover {
 
 @media (min-width: 912px) and (max-width: 1368px) {
   .projects {
-    margin-left: 5px; /* Adjust as needed for Surface Pro */
+    margin-left: 5px; 
   }
   .projects a {
-    margin: 4px -10px; /* Adjust spacing as needed */
+    margin: 4px -10px; 
   }
 }
-
-
-
-
-
-
-
 
 .project:hover {
   transform: scale(110%);
