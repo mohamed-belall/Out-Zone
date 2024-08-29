@@ -666,9 +666,32 @@ nav ul li a:hover {
     margin-left: -10px;
   }
   .projects a{
-    margin: 4px 16px;
+    margin: 4px -10px;
   }
 }
+
+@media (max-width: 900px) {
+  .projects{
+    margin-left: -10px;
+  }
+  .projects a{
+    margin: 4px -10px;
+  }
+}
+
+@media (min-width: 912px) and (max-width: 1368px) {
+  .projects {
+    margin-left: 5px; /* Adjust as needed for Surface Pro */
+  }
+  .projects a {
+    margin: 4px -10px; /* Adjust spacing as needed */
+  }
+}
+
+
+
+
+
 
 
 
