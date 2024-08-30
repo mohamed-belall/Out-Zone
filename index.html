@@ -1,409 +1,397 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="footer.css" />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    />
-    <title>Out Zone</title>
-    <link rel="icon" type="image/x-icon" href="images/32x32 px.svg">
-    <link rel="icon" href="images/logo2.png" sizes="128x128" type="image/png" />
-    <link rel="manifest" href="manifest.json" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="footer.css" />
 
-  <body>
-    <header>
-      <div class="container">
-        <a href="#" class="logo">
-          <img src="images/logo.png" alt="Logo" />
-        </a>
-        <a href="#" class="company-Name">
-          <div>out zone</div>
-        </a>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <title>Out Zone</title>
+  <link rel="icon" type="image/x-icon" href="images/32x32 px.svg" />
+  <link rel="icon" href="images/logo2.png" sizes="128x128" type="image/png" />
+  <link rel="manifest" href="manifest.json" />
+</head>
 
-        <div class="menu-toggle" onclick="toggleMenu()">
-          <span class="bar1"></span>
-          <span class="bar2"></span>
-          <span class="bar3"></span>
-        </div>
+<body>
+  <header>
+    <div class="container">
+      <a href="#" class="logo">
+        <img src="images/logo.png" alt="Logo" />
+      </a>
+      <a href="#" class="company-Name">
+        <div>out zone</div>
+      </a>
 
-        <nav>
-          <ul id="menu">
-            <li class="dropdown">
-              <a href="Contact us/Contact-Us.html">تواصل معنا</a>
-            </li>
-            <li class="dropdown">
-              <a href="About us/AboutUs.html">من نحن</a>
-            </li>
-            <li class="dropdown">
-              <a
-                class="dropdown-btn"
-                onclick="scrollToSection('AboAlaa-section')"
-              >
-                الخدمات
-                <span class="arrow">&#9662;</span>
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <span class="bar1"></span>
+        <span class="bar2"></span>
+        <span class="bar3"></span>
+      </div>
+
+      <nav>
+        <ul id="menu">
+          <li class="dropdown">
+            <a href="Contact us/Contact-Us.html">تواصل معنا</a>
+          </li>
+          <li class="dropdown">
+            <a href="About us/AboutUs.html">من نحن</a>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-btn" onclick="scrollToSection('AboAlaa-section')">
+              الخدمات
+              <span class="arrow">&#9662;</span>
+            </a>
+            <div class="dropdown-content">
+              <a href="../index.html">Design drawing (LC&LV)</a>
+              <a href="../index.html">Shop Drawing (LC&LV)</a>
+              <a href="../index.html">Architectural design 2d&3d</a>
+              <a href="../index.html">
+                Exterior Design (design&shop drawing)
               </a>
-              <div class="dropdown-content">
-                <a href="../index.html">Design drawing (LC&LV)</a>
-                <a href="../index.html">Shop Drawing (LC&LV)</a>
-                <a href="../index.html">Architectural design 2d&3d</a>
-                <a href="../index.html">
-                  Exterior Design (design&shop drawing)
-                </a>
-                <a href="../index.html">
-                  Interior Design (design&shop drawing)
-                </a>
-              </div>
-            </li>
-            <li class="dropdown">
-              <a
-                class="dropdown-btn"
-                onclick="scrollToSection('belal-section')"
-              >
-                المشاريع
-                <span class="arrow">&#9662;</span>
+              <a href="../index.html">
+                Interior Design (design&shop drawing)
               </a>
-              <div class="dropdown-content">
-                <a href="projectTemplate/Elec Projects/AboElriesh.html">
-                  مستشفى ابو الريش
-                </a>
-                <a href="projectTemplate/Elec Projects/مسشتفى التخصصي .html">
-                  مستشفي تخصصي
-                </a>
-                <a
-                  href="projectTemplate/Elec Projects/جامعة مصر المعلوماتية EUI.html"
-                >
-                  جامعة مصر المعلوماتية EUI
-                </a>
-                <a href="projectTemplate/Elec Projects/الجامعة العربية.html">
-                  الجامعة العربية
-                </a>
-                <a href="projectTemplate/Elec Projects/Savola.html">
-                  مصنع Savola
-                </a>
-                <a href="projectTemplate/Elec Projects/Office Building.html">
-                  Office building
-                </a>
-                <a
-                  href="projectTemplate/Arch Projects/مشروع إداري تجاري سكني.html"
-                >
-                  مشروع إداري تجاري سكني
-                </a>
-              </div>
-            </li>
-            <li><a href="index.html">الرئيسيه</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
-    <div class="scroll-container">
-      <div
-        class="scroll-item"
-        style="background-image: url('images/hands-engineer.jpg')"
-      >
-        <p class="text">Out Zone Group for Engineering services</p>
-      </div>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-btn" onclick="scrollToSection('belal-section')">
+              المشاريع
+              <span class="arrow">&#9662;</span>
+            </a>
+            <div class="dropdown-content">
+              <a href="projectTemplate/Elec Projects/AboElriesh.html">
+                مستشفى ابو الريش
+              </a>
+              <a href="projectTemplate/Elec Projects/مسشتفى التخصصي .html">
+                مستشفي تخصصي
+              </a>
+              <a href="projectTemplate/Elec Projects/جامعة مصر المعلوماتية EUI.html">
+                جامعة مصر المعلوماتية EUI
+              </a>
+              <a href="projectTemplate/Elec Projects/الجامعة العربية.html">
+                الجامعة العربية
+              </a>
+              <a href="projectTemplate/Elec Projects/Savola.html">
+                مصنع Savola
+              </a>
+              <a href="projectTemplate/Elec Projects/Office Building.html">
+                Office building
+              </a>
+              <a href="projectTemplate/Arch Projects/مشروع إداري تجاري سكني.html">
+                مشروع إداري تجاري سكني
+              </a>
+              <a href="projectTemplate/Arch Projects/bussiness-park.html">
+                Bussiness park
+              </a>
+              <a href="projectTemplate/Arch Projects/Kitchen-studio-interior.html">
+                Kitchen interior Design
+              </a>
+              <a href="projectTemplate/Arch Projects/Living-Room.html">
+                Living Room
+              </a>
+            </div>
+          </li>
+          <li><a href="index.html">الرئيسيه</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
 
-    <div id="AboAlaa-section" class="AboAlaa">
-      <div class="service-title">
-        <h1>خدماتنا</h1>
-      </div>
-      <section class="our-services">
-        <div class="service">
-          <img src="images/design drawing.jpg" alt="Design Drawing" />
-          <div class="head-service-title">
-            <h3>Design Drawing</h3>
-          </div>
-          <div class="height">
-            <p>
-              عمل تصميم للانظمة المختلفة من انظمة التيار الخفيف وانظمة الجهد
-              المنخفض كالانارة والباور وتتحديد الاحمال للمبني وانظمة التيار
-              الخفيفة ك انظمة المراقبة ونظام اطفاء الحريق وغيرها من الانظمة
-            </p>
-          </div>
-        </div>
-        <div class="service">
-          <img src="images/calc.jpg" alt="Calculation" />
-          <div class="head-service-title">
-            <h3>
-              Calculation Depends
-              <br />
-              Design
-            </h3>
-          </div>
-          <div class="height">
-            <p>
-              هو عبارة عن عمل الحسابات اللازمة لكل الانظمة من انظمة الجهد
-              المنخفض والتيار الخفيف
-            </p>
-          </div>
-        </div>
-        <div class="service">
-          <img src="images/ten.png" alt="Tendering" />
-          <div class="head-service-title">
-            <h3>Tendering</h3>
-          </div>
-          <div class="height">
-            <p dir="rtl">
-              يتم فيها تسعير الBOQ وعمل شيتات دراسة لكل نوع منفصل اي يتم عمل
-              شيتات للكابلات والاجهزة الموجودة بالمشروع علي الرغم من اختلاف
-              استخدامها وعمل شيتات اخري تكون خاص بالمسئول عن عمل المقايسة.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section class="our-services">
-        <div class="service">
-          <img src="images/shop.jpg" alt="Shop Drawing" />
-          <div class="head-service-title">
-            <h3>Shop Drawing</h3>
-          </div>
-          <div class="height">
-            <p>
-              عمل الرسومات التنفيذية لكل الانظمة التي تم عمل رسومات تنفيذية لها
-              وتجهيز الرسومات التنفيذية للطباعة للتنفيذ في الموقع
-            </p>
-          </div>
-        </div>
-        <div class="service">
-          <img
-            src="images/calc with shop.jpg"
-            alt="Calculation depends shop drawing"
-          />
-          <div class="head-service-title">
-            <h3>Calculation Depends Shop Drawing</h3>
-          </div>
-          <div class="height">
-            <p>
-              يتم عمل الحسابات اللازمة للرسومات التنفيذية التي تم عملها مثل نسبة
-              امتلا المواسير ونسبة الانخفاض في الجهد وتحديد حجم التراي
-            </p>
-          </div>
-        </div>
-      </section>
+  <div class="scroll-container">
+    <div class="scroll-item" style="background-image: url('images/hands-engineer.jpg')">
+      <p class="text">Out Zone Group for Engineering services</p>
     </div>
+  </div>
 
-    <div id="belal-section" class="belal">
-      <div class="project-title">
-        <h1>المشاريع</h1>
-      </div>
-      <div class="project-gallery">
-        <div class="filter-menu">
-          <button class="filter-btn active" data-filter="all">
-            كل المشاريع
-          </button>
-          <button class="filter-btn" data-filter="Electrical-projects">
-            المشاريع الكهربية
-          </button>
-          <button class="filter-btn" data-filter="Architectural-projects">
-            المشاريع المعمارية
-          </button>
-        </div>
-        <div class="projects">
-          <a href="projectTemplate/Elec Projects/AboElriesh.html">
-            <div class="project" data-category="Electrical-projects">
-              <div class="container">
-                <img src="images/image.jpg" alt="Electrical-projects" />
-              </div>
-              <div class="project-info">
-                <h3>مستشفي أبو الريش</h3>
-                <p>
-                  مشروع مستشفى أبو الريش الجديدة في 6 أكتوبر يشمل 4 مبانٍ:
-                  المستشفى الرئيسي، فندق، مباني خدمات، ومركز تدريب. يضيف أكثر من
-                  300 سرير، وتم العمل على مبنى 4 بالدور الثاني مع إعادة التصميم
-                  والحسابات اللازمة.
-                </p>
-              </div>
-            </div>
-          </a>
-
-          <a href="projectTemplate/Elec Projects/مسشتفى التخصصي .html">
-            <div class="project" data-category="Electrical-projects">
-              <div class="container">
-                <img src="images/مستشفي تخصصي.jpg" alt="Electrical-projects" />
-              </div>
-              <div class="project-info">
-                <h3>مستشفي تخصصي</h3>
-                <p>
-                  هي عبارة عن مستشفي علي مساحة 4000متر تقريبيا وتحتوي علي غرفة
-                  عمليات واحدة فقط وتحتوي علي مراكز إشاعة وصيدليات مدمجة بالمبني
-                  الخاص بالمستشفي
-                </p>
-              </div>
-            </div>
-          </a>
-
-          <a
-            href="projectTemplate/Elec Projects/جامعة مصر المعلوماتية EUI.html"
-          >
-            <div class="project" data-category="Electrical-projects">
-              <div class="container">
-                <img src="images/project-EUI.jpeg" alt="Electrical-projects" />
-              </div>
-              <div class="project-info">
-                <h3>جامعه مصر المعلوماتية</h3>
-                <p>
-                  تقرر إنشاء جامعة غير ربحية تعتمد على تكنولوجيا المعلومات في
-                  مدينة المعرفة بالعاصمة الجديدة، تضم 6 كليات ومبنى إدارة ومكتبة
-                  رئيسية على مساحة 82,433 م2، بالإضافة إلى نادي اجتماعي. يهدف
-                  المشروع إلى دمج تكنولوجيا المعلومات في التعليم وتنفيذ
-                  استراتيجية التحول الرقمي.
-                </p>
-              </div>
-            </div>
-          </a>
-
-          <a href="projectTemplate/Elec Projects/الجامعة العربية.html">
-            <div class="project" data-category="Electrical-projects">
-              <div class="container">
-                <img
-                  src="images/Arabic colleage.jpg"
-                  alt="Electrical-projects"
-                />
-              </div>
-              <div class="project-info">
-                <h3>الجامعه العربية</h3>
-                <p>
-                  The university does not depend on government funding and
-                  relies on the support of Arab shareholders, companies,
-                  university institutions, donations, and regional and
-                  international bodies and organizations
-                </p>
-              </div>
-            </div>
-          </a>
-
-          <a href="projectTemplate/Elec Projects/Savola.html">
-            <div class="project" data-category="Electrical-projects">
-              <div class="container">
-                <img src="images/savola.jpg" alt="Electrical-projects" />
-              </div>
-              <div class="project-info">
-                <h3>مصنع Savola</h3>
-                <p>هو عبارة عن مصنع للمنتجات الغذائية علي مساحة 5000متر</p>
-              </div>
-            </div>
-          </a>
-
-          <a href="projectTemplate/Elec Projects/Office Building.html">
-            <div class="project" data-category="Electrical-projects">
-              <div class="container">
-                <img src="images/office.png" alt="Electrical-projects" />
-              </div>
-              <div class="project-info">
-                <h3>Office building</h3>
-                <p>
-                  و عبارة عن مبني اداراي صغير علي مساحة 1500متر يحتوي علي بعض
-                  المكاتب وبعض الغرف للخدمات
-                </p>
-              </div>
-            </div>
-          </a>
-          <a href="projectTemplate/Arch Projects/bussiness-park.html">
-            <div class="project" data-category="Architectural-projects">
-              <div class="container">
-                <img
-                  src="projecttemplate/imges/Arch Images/bussiness-park/8.jpg"
-                  alt="Architectural-projects"
-                />
-              </div>
-              <div class="project-info">
-                <h3>bussiness-park</h3>
-                <p>ابعت الديسكربشن بتاع مشاريعك ي اسطااا</p>
-              </div>
-            </div>
-          </a>
-          <a href="projectTemplate/Arch Projects/مشروع إداري تجاري سكني.html">
-            <div class="project" data-category="Architectural-projects">
-              <div class="container">
-                <img
-                  src="projecttemplate/imges/Arch Images/مشروع إداري تجاري سكني/definition2.jpg"
-                  alt="Architectural-projects"
-                />
-              </div>
-              <div class="project-info">
-                <h3>مشروع إداري تجاري سكني</h3>
-                <p>ابعت الديسكربشن بتاع مشاريعك ي اسطااا</p>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
+  <div id="AboAlaa-section" class="AboAlaa">
+    <div class="service-title">
+      <h1>خدماتنا</h1>
     </div>
-
-    <section class="footer">
-      <!-- Logo and description -->
-      <div class="footer-content">
-        <div class="logo-container">
-          <a href="index.html">
-            <img src="images/logo.png" alt="logo" />
-          </a>
+    <section class="our-services">
+      <div class="service">
+        <img src="images/design drawing.jpg" alt="Design Drawing" />
+        <div class="head-service-title">
+          <h3>Design Drawing</h3>
+        </div>
+        <div class="height">
+          <p>
+            عمل تصميم للانظمة المختلفة من انظمة التيار الخفيف وانظمة الجهد
+            المنخفض كالانارة والباور وتتحديد الاحمال للمبني وانظمة التيار
+            الخفيفة ك انظمة المراقبة ونظام اطفاء الحريق وغيرها من الانظمة
+          </p>
         </div>
       </div>
-
-      <!-- Pages section -->
-      <div class="footer-content">
-        <h4>الصفحات</h4>
-        <li><a href="index.html">الصفحة الرئيسية</a></li>
-        <li><a href="About us/AboutUs.html">من نحن</a></li>
-        <li><a onclick="scrollToSection('AboAlaa-section')">الخدمات</a></li>
-        <li><a onclick="scrollToSection('belal-section')">المشاريع</a></li>
-        <li><a href="Contact us/Contact-Us.html">تواصل معنا</a></li>
+      <div class="service">
+        <img src="images/calc.jpg" alt="Calculation" />
+        <div class="head-service-title">
+          <h3>
+            Calculation Depends
+            <br />
+            Design
+          </h3>
+        </div>
+        <div class="height">
+          <p>
+            هو عبارة عن عمل الحسابات اللازمة لكل الانظمة من انظمة الجهد
+            المنخفض والتيار الخفيف
+          </p>
+        </div>
       </div>
-
-      <!-- Project section -->
-      <div class="footer-content">
-        <h4>المشاريع</h4>
-        <li><a onclick="scrollToSection('belal-section')">كل المشاريع</a></li>
-        <li>
-          <a onclick="scrollToSection('belal-section')">مشاريع كهربائية</a>
-        </li>
-        <li>
-          <a onclick="scrollToSection('belal-section')">مشاريع معمارية</a>
-        </li>
-      </div>
-
-      <!-- Help section -->
-      <div class="footer-content">
-        <h4>المساعدة</h4>
-        <li><a href="#">الخصوصية</a></li>
-        <li><a href="#">الشروط</a></li>
-        <li><a href="#">الأسئلة الشائعة</a></li>
-      </div>
-
-      <!-- Follow Us Section -->
-      <div class="footer-content">
-        <div class="social-links">
-          <h4>تابعنا</h4>
-          <a
-            href="https://www.facebook.com/profile.php?id=61564674100135&mibextid=ZbWKwL"
-          >
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="https://x.com/OutzoneOz1"><i class="fab fa-twitter"></i></a>
-          <a href="https://www.instagram.com/out.zoneoz1">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a href="https://www.linkedin.com/company/out-zone/">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
+      <div class="service">
+        <img src="images/ten.png" alt="Tendering" />
+        <div class="head-service-title">
+          <h3>Tendering</h3>
+        </div>
+        <div class="height">
+          <p dir="rtl">
+            يتم فيها تسعير الBOQ وعمل شيتات دراسة لكل نوع منفصل اي يتم عمل
+            شيتات للكابلات والاجهزة الموجودة بالمشروع علي الرغم من اختلاف
+            استخدامها وعمل شيتات اخري تكون خاص بالمسئول عن عمل المقايسة.
+          </p>
         </div>
       </div>
     </section>
+    <section class="our-services">
+      <div class="service">
+        <img src="images/shop.jpg" alt="Shop Drawing" />
+        <div class="head-service-title">
+          <h3>Shop Drawing</h3>
+        </div>
+        <div class="height">
+          <p>
+            عمل الرسومات التنفيذية لكل الانظمة التي تم عمل رسومات تنفيذية لها
+            وتجهيز الرسومات التنفيذية للطباعة للتنفيذ في الموقع
+          </p>
+        </div>
+      </div>
+      <div class="service">
+        <img src="images/calc with shop.jpg" alt="Calculation depends shop drawing" />
+        <div class="head-service-title">
+          <h3>Calculation Depends Shop Drawing</h3>
+        </div>
+        <div class="height">
+          <p>
+            يتم عمل الحسابات اللازمة للرسومات التنفيذية التي تم عملها مثل نسبة
+            امتلا المواسير ونسبة الانخفاض في الجهد وتحديد حجم التراي
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
 
-    <script src="file.js"></script>
-    <script src="script_project.js"></script>
-  </body>
-</html>
+  <div id="belal-section" class="belal">
+    <div class="project-title">
+      <h1>المشاريع</h1>
+    </div>
+    <div class="project-gallery">
+      <div class="filter-menu">
+        <button class="filter-btn active" data-filter="all">
+          كل المشاريع
+        </button>
+        <button class="filter-btn" data-filter="Electrical-projects">
+          المشاريع الكهربية
+        </button>
+        <button class="filter-btn" data-filter="Architectural-projects">
+          المشاريع المعمارية
+        </button>
+      </div>
+      <div class="projects">
+        <a href="projectTemplate/Elec Projects/AboElriesh.html">
+          <div class="project" data-category="Electrical-projects">
+            <div class="container">
+              <img src="images/image.jpg" alt="Electrical-projects" />
+            </div>
+            <div class="project-info">
+              <h3>مستشفي أبو الريش</h3>
+              <p>
+                مشروع مستشفى أبو الريش الجديدة في 6 أكتوبر يشمل 4 مبانٍ:
+                المستشفى الرئيسي، فندق، مباني خدمات، ومركز تدريب. يضيف أكثر من
+                300 سرير، وتم العمل على مبنى 4 بالدور الثاني مع إعادة التصميم
+                والحسابات اللازمة.
+              </p>
+            </div>
+          </div>
+        </a>
+
+        <a href="projectTemplate/Elec Projects/مسشتفى التخصصي .html">
+          <div class="project" data-category="Electrical-projects">
+            <div class="container">
+              <img src="images/مستشفي تخصصي.jpg" alt="Electrical-projects" />
+            </div>
+            <div class="project-info">
+              <h3>مستشفي تخصصي</h3>
+              <p>
+                هي عبارة عن مستشفي علي مساحة 4000متر تقريبيا وتحتوي علي غرفة
+                عمليات واحدة فقط وتحتوي علي مراكز إشاعة وصيدليات مدمجة بالمبني
+                الخاص بالمستشفي
+              </p>
+            </div>
+          </div>
+        </a>
+
+        <a href="projectTemplate/Elec Projects/جامعة مصر المعلوماتية EUI.html">
+          <div class="project" data-category="Electrical-projects">
+            <div class="container">
+              <img src="images/project-EUI.jpeg" alt="Electrical-projects" />
+            </div>
+            <div class="project-info">
+              <h3>جامعه مصر المعلوماتية</h3>
+              <p>
+                تقرر إنشاء جامعة غير ربحية تعتمد على تكنولوجيا المعلومات في
+                مدينة المعرفة بالعاصمة الجديدة، تضم 6 كليات ومبنى إدارة ومكتبة
+                رئيسية على مساحة 82,433 م2، بالإضافة إلى نادي اجتماعي. يهدف
+                المشروع إلى دمج تكنولوجيا المعلومات في التعليم وتنفيذ
+                استراتيجية التحول الرقمي.
+              </p>
+            </div>
+          </div>
+        </a>
+
+        <a href="projectTemplate/Elec Projects/الجامعة العربية.html">
+          <div class="project" data-category="Electrical-projects">
+            <div class="container">
+              <img src="images/Arabic colleage.jpg" alt="Electrical-projects" />
+            </div>
+            <div class="project-info">
+              <h3>الجامعه العربية</h3>
+              <p>
+                The university does not depend on government funding and
+                relies on the support of Arab shareholders, companies,
+                university institutions, donations, and regional and
+                international bodies and organizations
+              </p>
+            </div>
+          </div>
+        </a>
+
+        <a href="projectTemplate/Elec Projects/Savola.html">
+          <div class="project" data-category="Electrical-projects">
+            <div class="container">
+              <img src="images/savola.jpg" alt="Electrical-projects" />
+            </div>
+            <div class="project-info">
+              <h3>مصنع Savola</h3>
+              <p>هو عبارة عن مصنع للمنتجات الغذائية علي مساحة 5000متر</p>
+            </div>
+          </div>
+        </a>
+
+        <a href="projectTemplate/Elec Projects/Office Building.html">
+          <div class="project" data-category="Electrical-projects">
+            <div class="container">
+              <img src="images/office.png" alt="Electrical-projects" />
+            </div>
+            <div class="project-info">
+              <h3>Office building</h3>
+              <p>
+                و عبارة عن مبني اداراي صغير علي مساحة 1500متر يحتوي علي بعض
+                المكاتب وبعض الغرف للخدمات
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="projectTemplate/Arch Projects/bussiness-park.html">
+          <div class="project" data-category="Architectural-projects">
+            <div class="container">
+              <img src="projecttemplate/imges/Arch Images/bussiness-park/8.jpg" alt="Architectural-projects" />
+            </div>
+            <div class="project-info">
+              <h3>Business Park</h3>
+              <p>
+                مقترح انشاء مشروع مجمع اعمال (Business Park) علي قطعة ارض
+                مساحتها التقريبية 6 فدان
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="projectTemplate/Arch Projects/مشروع إداري تجاري سكني.html">
+          <div class="project" data-category="Architectural-projects">
+            <div class="container">
+              <img src="projecttemplate/imges/Arch Images/مشروع إداري تجاري سكني/definition2.jpg"
+                alt="Architectural-projects" />
+            </div>
+            <div class="project-info">
+              <h3>مشروع إداري تجاري سكني</h3>
+              <p>
+                في إطار التنمية العمرانية لمدينة طنطا يقترح انشاء مجمع تجاري
+                سكني وذلك لتحسين مستوي الخدمات في المدينة. تم اقتراح أرض
+                للمشروع بمسطع 16000 متر مربع تطل علي شارعين عرض كلا منهما 30م
+                .
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <section class="footer">
+    <!-- Logo and description -->
+    <div class="footer-content">
+      <div class="logo-container">
+        <a href="index.html">
+          <img src="images/logo.png" alt="logo" />
+        </a>
+      </div>
+    </div>
+
+    <!-- Pages section -->
+    <div class="footer-content">
+      <h4>الصفحات</h4>
+      <li><a href="index.html">الصفحة الرئيسية</a></li>
+      <li><a href="About us/AboutUs.html">من نحن</a></li>
+      <li><a onclick="scrollToSection('AboAlaa-section')">الخدمات</a></li>
+      <li><a onclick="scrollToSection('belal-section')">المشاريع</a></li>
+      <li><a href="Contact us/Contact-Us.html">تواصل معنا</a></li>
+    </div>
+
+    <!-- Project section -->
+    <div class="footer-content">
+      <h4>المشاريع</h4>
+      <li><a onclick="scrollToSection('belal-section')">كل المشاريع</a></li>
+      <li>
+        <a onclick="scrollToSection('belal-section')">مشاريع كهربائية</a>
+      </li>
+      <li>
+        <a onclick="scrollToSection('belal-section')">مشاريع معمارية</a>
+      </li>
+    </div>
+
+    <!-- Help section -->
+    <div class="footer-content">
+      <h4>المساعدة</h4>
+      <li><a href="#">الخصوصية</a></li>
+      <li><a href="#">الشروط</a></li>
+      <li><a href="#">الأسئلة الشائعة</a></li>
+    </div>
+
+    <!-- Follow Us Section -->
+    <div class="footer-content">
+      <div class="social-links">
+        <h4>تابعنا</h4>
+        <a href="https://www.facebook.com/profile.php?id=61564674100135&mibextid=ZbWKwL">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://x.com/OutzoneOz1"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/out.zoneoz1">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/company/out-zone/">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://www.youtube.com/@OutZone-t4k">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <script src="file.js"></script>
+  <script src="script_project.js"></script>
+</body>
+
+</html>  
