@@ -73,7 +73,7 @@
 .sidenav-toggle {
   display: none;
   position: fixed;
-  top: 25%;
+  top: 40%;
   right: 0;
   background-color: #17314e;
   color: #f1f1f1;
@@ -90,52 +90,11 @@
 /* When sidenav is open, move the button to align with the sidenav */
 .sidenav.open ~ .sidenav-toggle {
   right: 140px; /* Adjust based on sidenav width */
-  top: 25%;
+  top: 40%;
 }
 
 /* Responsive Adjustments */
-@media screen and (max-width: 1500px) {
-  .sidenav {
-    width: 0;
-    padding: 0;
-    overflow: hidden;
-    box-shadow: none;
-  }
-  .sidenav.open {
-    width: 172px;
-    padding-bottom: 20px;
-    height: auto;
-    top: 25%;
-  }
-  .sidenav h1 {
-      display: block;
-      font-size: 22px !important;
-  }
-  .sidenav.open h1 {
-    display: block;
-    font-size: 26px !important;
-    margin-bottom: 15px;
-    padding: 20px 10px;
-  }
 
-  .sidenav a {
-      padding: 10px 20px;
-      font-size: 18px;
-      opacity: 1;
-  }
-  .sidenav.open a {
-    padding: 15px 25px;
-    font-size: 18px;
-    opacity: 1;
-  }
-  .sidenav-toggle {
-    display: block;
-  }
-  .sidenav.open ~ .sidenav-toggle {
-    right: 170px; /* Adjust based on sidenav width */
-    top: 25%;
-  }
-}
 
 @media screen and (max-width: 850px) {
   .sidenav {
@@ -183,7 +142,7 @@
     display: block;
   }
   .sidenav.open ~ .sidenav-toggle {
-    right: 170px; /* Adjust based on sidenav width */
+    right: 140px; /* Adjust based on sidenav width */
   }
 }
 
@@ -191,7 +150,7 @@
   .sidenav.open {
     width: 140px;
     padding-bottom: 10px;
-    top: 35%;
+    top: 40%;
     height: auto;
   }
 

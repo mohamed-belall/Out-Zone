@@ -3,7 +3,7 @@
     height: 590px;
     width: 190px;
     position: fixed;
-    top: 57%;
+    top: 56%;
     right: 0;
     background-color: #17314e;
     transform: translateY(-50%);
@@ -88,32 +88,6 @@
 }
 
 /* Responsive Adjustments */
-@media screen and (max-width: 1500px) {
-    .sidenav {
-        width: 180px;
-        padding: 0px;
-        overflow: visible;
-        box-shadow: 0 0 82px rgb(97, 97, 97);
-        top: 25%;
-        height: auto;
-    }
-
-    .sidenav h1 {
-        display: block;
-        font-size: 22px !important;
-    }
-
-    .sidenav a {
-        padding: 10px 20px;
-        font-size: 18px;
-        opacity: 1;
-    }
-
-    .sidenav.open ~ .sidenav-toggle {
-        right: 180px;
-    }
-}
-
 /* Mobile Devices (max-width: 768px) */
 @media screen and (max-width: 768px) {
     .sidenav {
@@ -236,55 +210,53 @@
 
 /* iPad Mini (7.9") */
 @media screen and (min-width: 768px) and (max-width: 834px) and (orientation: portrait) {
-    .sidenav {
-        width: 160px;
-        padding: 0px;
-        overflow: visible;
-        box-shadow: 0 0 82px rgb(97, 97, 97);
-        top: 32%;
+    .sidenav.open {
+        width: 140px;
+        padding-bottom: 0;
+        top: 35%;
         height: auto;
     }
 
-    .sidenav h1 {
-        display: block;
-        font-size: 20px !important;
+    .sidenav.open h1 {
+        font-size: 17px !important;
     }
 
-    .sidenav a {
-        padding: 10px 20px;
-        font-size: 16px;
-        opacity: 1;
+    .sidenav.open a {
+        font-size: 12px;
+    }
+
+    .main-content {
+        padding: 10px;
     }
 
     .sidenav.open ~ .sidenav-toggle {
-        right: 160px;
+        right: 140px;
     }
 }
 
 /* iPad Pro (11" and 12.9") */
 @media screen and (min-width: 835px) and (max-width: 1024px) {
-    .sidenav {
-        width: 180px;
-        padding: 0px;
-        overflow: visible;
-        box-shadow: 0 0 82px rgb(97, 97, 97);
-        top: 25%;
+    .sidenav.open {
+        width: 140px;
+        padding-bottom: 0;
+        top: 80%;
         height: auto;
     }
 
-    .sidenav h1 {
-        display: block;
-        font-size: 22px !important;
+    .sidenav.open h1 {
+        font-size: 17px !important;
     }
 
-    .sidenav a {
-        padding: 10px 20px;
-        font-size: 18px;
-        opacity: 1;
+    .sidenav.open a {
+        font-size: 12px;
+    }
+
+    .main-content {
+        padding: 10px;
     }
 
     .sidenav.open ~ .sidenav-toggle {
-        right: 180px;
+        right: 140px;
     }
 }
 
