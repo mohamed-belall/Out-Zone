@@ -1,0 +1,316 @@
+/* Base Styling for the side navigation */
+.sidenav {
+    height: 590px;
+    width: 190px;
+    position: fixed;
+    top: 57%;
+    right: 0;
+    background-color: #17314e;
+    transform: translateY(-50%);
+    text-align: center;
+    padding-bottom: 20px;
+    z-index: 10000;
+    border-radius: 10px 0 0 10px;
+    overflow-x: visible;
+    transition: width 0.3s ease, right 0.3s ease;
+    box-shadow: 0 0 82px rgb(97, 97, 97);
+}
+
+.sidenav h1 {
+    font-weight: 600 !important;
+    font-size: 26px !important;
+    border-radius: 10px 0 0 0;
+    margin-top: -1px;
+    margin-bottom: 15px;
+    padding: 20px 10px;
+    color: #f1f1f1;
+    background-color: #fbae17;
+}
+
+.sidenav a {
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #f1f1f1;
+    display: block;
+    transition: all 0.2s ease;
+    transform-origin: right;
+}
+
+.sidenav a:hover {
+    background-color: #fbae17;
+    color: white;
+    border-radius: 10px 0 0 10px;
+    transform: scale(1.2);
+    padding: 12px 15px;
+}
+
+.main-content {
+    display: flex;
+    margin-right: 250px;
+    padding: 20px;
+    align-items: center;
+}
+
+.content-section {
+    display: none;
+}
+
+.content-section.active {
+    display: block;
+}
+
+.nav-link.active {
+    color: #fbae17;
+}
+
+.sidenav-toggle {
+    display: none;
+    position: fixed;
+    top: 35%;
+    right: 0;
+    background-color: #17314e;
+    color: #f1f1f1;
+    border: none;
+    font-size: 30px;
+    padding: 8px;
+    border-radius: 2px;
+    z-index: 9999;
+    cursor: pointer;
+    transform: translateY(-50%);
+    transition: right 0.3s ease, transform 0.3s ease;
+}
+
+/* When sidenav is open, move the button to align with the sidenav */
+.sidenav.open ~ .sidenav-toggle {
+    right: 140px;
+    top:35%;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 1500px) {
+    .sidenav {
+        width: 180px;
+        padding: 0px;
+        overflow: visible;
+        box-shadow: 0 0 82px rgb(97, 97, 97);
+        top: 25%;
+        height: auto;
+    }
+
+    .sidenav h1 {
+        display: block;
+        font-size: 22px !important;
+    }
+
+    .sidenav a {
+        padding: 10px 20px;
+        font-size: 18px;
+        opacity: 1;
+    }
+
+    .sidenav.open ~ .sidenav-toggle {
+        right: 180px;
+    }
+}
+
+/* Mobile Devices (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .sidenav {
+        width: 0;
+        padding: 0;
+        overflow: hidden;
+        box-shadow: none;
+        transition: width 0.3s ease, padding 0.3s ease;
+    }
+
+    .sidenav.open {
+        width: 172px;
+        padding-bottom: 20px;
+    }
+
+    .sidenav h1 {
+        display: none;
+    }
+
+    .sidenav.open h1 {
+        display: block;
+        font-size: 22px !important;
+        margin-bottom: 15px;
+        padding: 20px 10px;
+    }
+
+    .sidenav a {
+        padding: 0;
+        font-size: 0;
+        opacity: 0;
+        transition: opacity 0.3s ease, padding 0.3s ease, font-size 0.3s ease;
+    }
+
+    .sidenav.open a {
+        padding: 10px 20px;
+        font-size: 18px;
+        opacity: 1;
+    }
+
+    .main-content {
+        margin-right: 0;
+        padding: 15px;
+    }
+
+    .sidenav-toggle {
+        display: block;
+    }
+
+    .sidenav.open ~ .sidenav-toggle {
+        right: 170px;
+    }
+}
+
+
+/* Small Mobile Devices (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    .sidenav.open {
+        width: 140px;
+        padding-bottom: 0;
+        top: 35%;
+        height: auto;
+    }
+
+    .sidenav.open h1 {
+        font-size: 17px !important;
+    }
+
+    .sidenav.open a {
+        font-size: 12px;
+    }
+
+    .main-content {
+        padding: 10px;
+    }
+
+    .sidenav.open ~ .sidenav-toggle {
+        right: 140px;
+    }
+}
+
+/* Devices with Small Height (max-height: 450px) */
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav.open {
+        width: 140px;
+        padding-bottom: 0;
+        top: 45%;
+        height: auto;
+    }
+
+    .sidenav a {
+        font-size: 14px;
+    }
+
+    .sidenav.open ~ .sidenav-toggle {
+        right: 140px;
+    }
+}
+
+/* Very Small Devices (max-width: 400px) */
+@media screen and (max-width: 400px) {
+    .sidenav.open {
+        width: 140px;
+        padding-bottom: 0;
+        top: 43%;
+        height: auto;
+    }
+
+    .sidenav a {
+        font-size: 14px;
+    }
+
+    .sidenav.open ~ .sidenav-toggle {
+        right: 140px;
+    }
+}
+
+/* iPad Mini (7.9") */
+@media screen and (min-width: 768px) and (max-width: 834px) and (orientation: portrait) {
+    .sidenav {
+        width: 160px;
+        padding: 0px;
+        overflow: visible;
+        box-shadow: 0 0 82px rgb(97, 97, 97);
+        top: 32%;
+        height: auto;
+    }
+
+    .sidenav h1 {
+        display: block;
+        font-size: 20px !important;
+    }
+
+    .sidenav a {
+        padding: 10px 20px;
+        font-size: 16px;
+        opacity: 1;
+    }
+
+    .sidenav.open ~ .sidenav-toggle {
+        right: 160px;
+    }
+}
+
+/* iPad Pro (11" and 12.9") */
+@media screen and (min-width: 835px) and (max-width: 1024px) {
+    .sidenav {
+        width: 180px;
+        padding: 0px;
+        overflow: visible;
+        box-shadow: 0 0 82px rgb(97, 97, 97);
+        top: 25%;
+        height: auto;
+    }
+
+    .sidenav h1 {
+        display: block;
+        font-size: 22px !important;
+    }
+
+    .sidenav a {
+        padding: 10px 20px;
+        font-size: 18px;
+        opacity: 1;
+    }
+
+    .sidenav.open ~ .sidenav-toggle {
+        right: 180px;
+    }
+}
+
+/* iPad Air (10.5") */
+@media screen and (min-width: 820px) and (max-width: 834px) {
+    .sidenav {
+        width: 170px;
+        padding: 0px;
+        overflow: visible;
+        box-shadow: 0 0 82px rgb(97, 97, 97);
+        top: 27%;
+        height: auto;
+    }
+
+    .sidenav h1 {
+        display: block;
+        font-size: 21px !important;
+    }
+
+    .sidenav a {
+        padding: 10px 20px;
+        font-size: 17px;
+        opacity: 1;
+    }
+
+    .sidenav.open ~ .sidenav-toggle {
+        right: 170px;
+    }
+}

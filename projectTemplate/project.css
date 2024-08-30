@@ -27,9 +27,9 @@ body::before {
   margin-top: 93px;
   font-weight: bold;
   background-color: #fbae17;
-  width: 200px;
+  width: 250px;
   position: relative;
-  left: 45%;
+  left: 43%;
   border-radius: 10px;
   border: 2px solid black;
   box-shadow: 0px 0px 12px 1px #004eff;
@@ -486,7 +486,7 @@ body::before {
 }
 
 /**************************************/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 850px) {
   .slider1,
   .slider2,
   .slider3,
@@ -498,16 +498,17 @@ body::before {
     height: 400px;
   }
 
-  .project-type
+  .project-type,
   .project-type-name {
-    width: 190px;
-    left: 35%;
+    width: 25%;
+    left: 37%;
+    font-size: 23px;
   }
 
   .project-type{
     width: 190px;
     left: 0;
-    border-radius: 10px;
+    border-radius: 2px;
     margin-bottom: -15px;
   }
 }
@@ -524,18 +525,19 @@ body::before {
     width: 88%;
   }
 
+  
   .project-type-name{
-    width: 134px;
-    font-size: 20px;
+    width: 135px;
+    font-size: 18px;
     position: relative;
-    left: 34%;
+    left: 32%;
   }
   .project-type{
-    width: 134px;
+    width: 45%;
     font-size: 20px;
     position: relative;
     left: 0;
-    border-radius: 10px;
+    border-radius: 2px;
     margin-bottom: -42px;
   }
 }
