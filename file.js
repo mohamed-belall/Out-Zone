@@ -30,12 +30,15 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  // Hide dropdowns when clicking outside
-  document.addEventListener('click', function () {
+  // Hide dropdowns when clicking outside except when clicking inside the slider
+  document.addEventListener('click', function (event) {
     if (window.innerWidth <= 768) { // Only for mobile view
-      document.querySelectorAll('.dropdown-content').forEach(content => {
-        content.style.display = 'none';
-      });
+      // Ensure it doesn't close when clicking inside the slider
+      if (!event.target.closest('.dropdown') && !event.target.closest('.slider')) {
+        document.querySelectorAll('.dropdown-content').forEach(content => {
+          content.style.display = 'none';
+        });
+      }
     }
   });
 

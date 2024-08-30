@@ -1,4 +1,3 @@
-// Function definition remains the same as provided earlier
 function initializeSlider({
   sliderContainerSelector,
   listSelector = ".list",
@@ -17,22 +16,18 @@ function initializeSlider({
       let next = sliderContainer.querySelector(nextButtonSelector);
       let prev = sliderContainer.querySelector(prevButtonSelector);
       let dots = sliderContainer.querySelectorAll(dotsSelector);
-      let indicators = document.querySelectorAll(indicatorsSelector); // Use global document query
+      let indicators = document.querySelectorAll(indicatorsSelector);
 
       let lengthItems = items.length - 1;
       let active = 0;
       let refreshInterval;
-      let direction = "right"; // Default direction
+      let direction = "right";
 
       function reloadSlider() {
-        console.log("Reloading slider to index:", active);
-
         slider.style.left = -items[active].offsetLeft + "px";
 
         // Update dots
-        let currentDot = sliderContainer.querySelector(
-          `${dotsSelector}.active`
-        );
+        let currentDot = sliderContainer.querySelector(`${dotsSelector}.active`);
         if (currentDot) {
           currentDot.classList.remove("active");
         }
@@ -41,9 +36,7 @@ function initializeSlider({
         }
 
         // Update carousel indicators
-        let currentIndicator = document.querySelector(
-          `${indicatorsSelector}.active`
-        );
+        let currentIndicator = document.querySelector(`${indicatorsSelector}.active`);
         if (currentIndicator) {
           currentIndicator.classList.remove("active");
         }
@@ -65,33 +58,33 @@ function initializeSlider({
         }, interval);
       }
 
-      next.onclick = function () {
-        direction = "right"; // Update direction to right
+      next.onclick = function (event) {
+        direction = "right";
         active = active + 1 <= lengthItems ? active + 1 : 0;
-        console.log("Next clicked, setting active to:", active);
         reloadSlider();
+        event.stopPropagation(); // Prevent the event from closing the dropdown
       };
 
-      prev.onclick = function () {
-        direction = "left"; // Update direction to left
+      prev.onclick = function (event) {
+        direction = "left";
         active = active - 1 >= 0 ? active - 1 : lengthItems;
-        console.log("Previous clicked, setting active to:", active);
         reloadSlider();
+        event.stopPropagation(); // Prevent the event from closing the dropdown
       };
 
       dots.forEach((li, key) => {
-        li.addEventListener("click", () => {
+        li.addEventListener("click", (event) => {
           active = key;
-          console.log("Dot clicked, setting active to:", active);
           reloadSlider();
+          event.stopPropagation(); // Prevent the event from closing the dropdown
         });
       });
 
       indicators.forEach((indicator, key) => {
-        indicator.addEventListener("click", () => {
+        indicator.addEventListener("click", (event) => {
           active = key;
-          console.log("Indicator clicked, setting active to:", active);
           reloadSlider();
+          event.stopPropagation(); // Prevent the event from closing the dropdown
         });
       });
 
@@ -103,6 +96,7 @@ function initializeSlider({
       resetInterval();
     });
 }
+
 
   // Call the function with different parameters
 initializeSlider({
