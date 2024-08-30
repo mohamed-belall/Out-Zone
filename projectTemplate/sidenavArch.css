@@ -9,7 +9,7 @@
     transform: translateY(-50%);
     text-align: center;
     padding-bottom: 20px;
-    z-index: 10000;
+    z-index: 1;
     border-radius: 10px 0 0 10px;
     overflow-x: visible;
     transition: width 0.3s ease, right 0.3s ease;
@@ -75,7 +75,7 @@
     font-size: 30px;
     padding: 8px;
     border-radius: 2px;
-    z-index: 9999;
+    z-index: 1;
     cursor: pointer;
     transform: translateY(-50%);
     transition: right 0.3s ease, transform 0.3s ease;
@@ -88,8 +88,7 @@
 }
 
 /* Responsive Adjustments */
-/* Mobile Devices (max-width: 768px) */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1100px) {
     .sidenav {
         width: 0;
         padding: 0;
@@ -101,6 +100,8 @@
     .sidenav.open {
         width: 172px;
         padding-bottom: 20px;
+        top: 25%;
+        height: auto;
     }
 
     .sidenav h1 {
@@ -111,7 +112,122 @@
         display: block;
         font-size: 22px !important;
         margin-bottom: 15px;
-        padding: 20px 10px;
+        padding: 10px 5px;
+    }
+
+    .sidenav a {
+        padding: 0;
+        font-size: 0;
+        opacity: 0;
+        transition: opacity 0.3s ease, padding 0.3s ease, font-size 0.3s ease;
+    }
+
+    .sidenav.open a {
+        padding: 10px 20px;
+        font-size: 18px;
+        opacity: 1;
+    }
+
+    .main-content {
+        margin-right: 0;
+        padding: 15px;
+    }
+
+    .sidenav-toggle {
+        display: block;
+        top: 25%;
+    }
+
+    .sidenav.open ~ .sidenav-toggle {
+        right: 170px;
+        top: 25%;
+
+    }
+}
+
+
+@media screen and (max-width: 850px) {
+    .sidenav {
+        width: 0;
+        padding: 0;
+        overflow: hidden;
+        box-shadow: none;
+        transition: width 0.3s ease, padding 0.3s ease;
+    }
+
+    .sidenav.open {
+        width: 172px;
+        padding-bottom: 20px;
+        top: 29%;
+        height: auto;
+    }
+
+    .sidenav h1 {
+        display: none;
+    }
+
+    .sidenav.open h1 {
+        display: block;
+        font-size: 22px !important;
+        margin-bottom: 15px;
+        padding: 10px 5px;
+    }
+
+    .sidenav a {
+        padding: 0;
+        font-size: 0;
+        opacity: 0;
+        transition: opacity 0.3s ease, padding 0.3s ease, font-size 0.3s ease;
+    }
+
+    .sidenav.open a {
+        padding: 10px 20px;
+        font-size: 18px;
+        opacity: 1;
+    }
+
+    .main-content {
+        margin-right: 0;
+        padding: 15px;
+    }
+
+    .sidenav-toggle {
+        display: block;
+        top: 25%;
+    }
+
+    .sidenav.open ~ .sidenav-toggle {
+        right: 170px;
+        top: 25%;
+
+    }
+}
+/* Mobile Devices (max-width: 800px) */
+@media screen and (max-width: 800px) {
+    .sidenav {
+        width: 0;
+        padding: 0;
+        overflow: hidden;
+        box-shadow: none;
+        transition: width 0.3s ease, padding 0.3s ease;
+    }
+
+    .sidenav.open {
+        width: 172px;
+        padding-bottom: 20px;
+        top: 33%;
+        height: auto;
+    }
+
+    .sidenav h1 {
+        display: none;
+    }
+
+    .sidenav.open h1 {
+        display: block;
+        font-size: 22px !important;
+        margin-bottom: 15px;
+        padding: 10px 5px;
     }
 
     .sidenav a {
@@ -163,8 +279,14 @@
         padding: 10px;
     }
 
+    .sidenav-toggle {
+        display: block;
+        top: 35%;
+    }
+
     .sidenav.open ~ .sidenav-toggle {
         right: 140px;
+        top: 35%;
     }
 }
 
@@ -203,86 +325,15 @@
         font-size: 14px;
     }
 
+    .sidenav-toggle {
+        display: block;
+        top: 40%;
+    }
+
     .sidenav.open ~ .sidenav-toggle {
         right: 140px;
+        top: 40%;
     }
 }
 
 /* iPad Mini (7.9") */
-@media screen and (min-width: 768px) and (max-width: 834px) and (orientation: portrait) {
-    .sidenav.open {
-        width: 140px;
-        padding-bottom: 0;
-        top: 35%;
-        height: auto;
-    }
-
-    .sidenav.open h1 {
-        font-size: 17px !important;
-    }
-
-    .sidenav.open a {
-        font-size: 12px;
-    }
-
-    .main-content {
-        padding: 10px;
-    }
-
-    .sidenav.open ~ .sidenav-toggle {
-        right: 140px;
-    }
-}
-
-/* iPad Pro (11" and 12.9") */
-@media screen and (min-width: 835px) and (max-width: 1024px) {
-    .sidenav.open {
-        width: 140px;
-        padding-bottom: 0;
-        top: 80%;
-        height: auto;
-    }
-
-    .sidenav.open h1 {
-        font-size: 17px !important;
-    }
-
-    .sidenav.open a {
-        font-size: 12px;
-    }
-
-    .main-content {
-        padding: 10px;
-    }
-
-    .sidenav.open ~ .sidenav-toggle {
-        right: 140px;
-    }
-}
-
-/* iPad Air (10.5") */
-@media screen and (min-width: 820px) and (max-width: 834px) {
-    .sidenav {
-        width: 170px;
-        padding: 0px;
-        overflow: visible;
-        box-shadow: 0 0 82px rgb(97, 97, 97);
-        top: 27%;
-        height: auto;
-    }
-
-    .sidenav h1 {
-        display: block;
-        font-size: 21px !important;
-    }
-
-    .sidenav a {
-        padding: 10px 20px;
-        font-size: 17px;
-        opacity: 1;
-    }
-
-    .sidenav.open ~ .sidenav-toggle {
-        right: 170px;
-    }
-}
