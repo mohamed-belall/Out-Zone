@@ -534,6 +534,7 @@ nav ul li a:hover {
 .service p {
   color: #0d2c47d6;
   padding: 0 20px;
+  font-weight: 600;
 }
 
 .service .read-more {
@@ -733,6 +734,7 @@ nav ul li a:hover {
   margin: 10px 0 0;
   color: #0d2c47d6;
   font-size: 1em;
+  font-weight: 600;
 }
 .project-title {
   padding-top: 4px;
