@@ -636,6 +636,7 @@ nav ul li a:hover {
   flex-wrap: wrap;
   gap: 40px;
   justify-content: center;
+  padding-bottom: 50px;
 }
 .projects a {
   padding: 0;
