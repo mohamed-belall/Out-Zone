@@ -644,6 +644,7 @@ nav ul li a:hover {
 }
 
 .project {
+  position: relative;
   background-color: #fbae17;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -662,12 +663,13 @@ nav ul li a:hover {
   -o-transition: transform 0.6s, box-shadow 0.3s;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1920px) {
   .projects {
-    margin-left: -10px;
+    margin-left: 5px;
   }
   .projects a {
-    margin: 4px -10px;
+    /* padding: 0px 28px; */
+    margin: 0px -20px;
   }
 }
 
@@ -676,18 +678,21 @@ nav ul li a:hover {
     margin-left: -10px;
   }
   .projects a {
-    margin: 4px -10px;
+    padding: 0px 28px;
   }
 }
 
-@media (min-width: 912px) and (max-width: 1920px) {
+@media (max-width: 480px) {
   .projects {
-    margin-left: 5px;
+    margin-left: -10px;
   }
   .projects a {
-    margin: 4px -10px;
+    padding: 0px;
   }
 }
+
+
+
 
 .project:hover {
   transform: scale(110%);
@@ -754,6 +759,7 @@ nav ul li a:hover {
 .project-title {
   padding-top: 4px;
 }
+
 
 :root {
   --primary-color: #121b25;

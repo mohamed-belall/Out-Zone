@@ -20,11 +20,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
       // Close sidenav after a link is clicked (for mobile view)
       if (window.innerWidth <= 768) {
-        // Adding a slight delay to allow transition
         setTimeout(() => {
           sidenav.classList.remove("open");
           sidenavToggle.innerHTML = '&#9664;'; // Left arrow
-        }, 300); // Delay must match the CSS transition duration
+        }, 300); // Delay matches CSS transition duration
       }
     });
   });

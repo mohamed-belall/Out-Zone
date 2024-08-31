@@ -1,24 +1,26 @@
 /* Base Styling for the side navigation */
 .sidenav {
   height: 400px;
-  width: 172px;
+  width: 0; /* Start hidden with zero width */
   position: fixed;
-  top: 50%; /* Center the sidenav vertically at 35% from the top */
-  right: 0;
+  top: 50%; /* Center the sidenav vertically */
+  right: 0; /* Align to the right */
   background-color: #17314e;
   transform: translateY(-50%);
   text-align: center;
   padding-bottom: 20px;
   z-index: 1;
   border-radius: 10px 0 0 10px;
-  overflow-x: visible;
-  transition: width 0.3s ease, right 0.3s ease; /* Transition for width and right positioning */
+  overflow-x: hidden; /* Hide any horizontal overflow */
+  transition: width 0.3s ease, opacity 0.3s ease; /* Smooth transition for width and opacity */
   box-shadow: 0 0 82px rgb(97, 97, 97);
+  opacity: 0; /* Initially transparent */
 }
 
+/* When sidenav is open */
 .sidenav.open {
-  width: 172px; /* Adjust based on screen size */
-  padding-bottom: 20px;
+  width: 172px; /* Full width when open */
+  opacity: 1; /* Fully opaque when open */
 }
 
 .sidenav h1 {
