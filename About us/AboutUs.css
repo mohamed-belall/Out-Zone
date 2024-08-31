@@ -31,6 +31,25 @@
   padding: 20px; /* Add padding to prevent content from touching the edges */
 }
 
+.page-wrap-3laa span{
+  font-weight: bold;
+}
+
+.page-wrap-3laa .spans{
+  font-size: 1.5em;
+  color:#051c6d;
+}
+
+.page-wrap-3laa .imp{
+  font-size: 1.1em;
+  color: rgb(186, 59, 104);
+}
+
+.page-wrap-3laa .title{
+  font-size: 1.15em;
+  color: #4d056d;
+}
+
 .page-wrap-3laa .outer-container {
   justify-content:space-around;
   align-items: center;
