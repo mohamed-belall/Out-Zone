@@ -1,7 +1,7 @@
 /* Base Styling for the side navigation */
 .sidenav {
   height: 400px;
-  width: 0; /* Start hidden with zero width */
+  width: 170px; 
   position: fixed;
   top: 50%; /* Center the sidenav vertically */
   right: 0; /* Align to the right */
@@ -11,16 +11,16 @@
   padding-bottom: 20px;
   z-index: 1;
   border-radius: 10px 0 0 10px;
-  overflow-x: hidden; /* Hide any horizontal overflow */
-  transition: width 0.3s ease, opacity 0.3s ease; /* Smooth transition for width and opacity */
+  overflow-x: visible; 
+  transition: width 0.3s ease, right 0.3s ease; 
   box-shadow: 0 0 82px rgb(97, 97, 97);
-  opacity: 0; /* Initially transparent */
+  opacity: 1; /* Initially transparent */
 }
 
 /* When sidenav is open */
 .sidenav.open {
   width: 172px; /* Full width when open */
-  opacity: 1; /* Fully opaque when open */
+  padding-bottom: 20px;
 }
 
 .sidenav h1 {
@@ -96,7 +96,7 @@
 }
 
 /* Responsive Adjustments */
-@media screen and (max-width: 1050px) {
+@media (max-width: 1300px){
   .sidenav {
     width: 0;
     padding: 0;
