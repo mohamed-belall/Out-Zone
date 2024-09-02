@@ -3,15 +3,8 @@
   margin: 0;
   text-decoration: none;
   list-style: none;
-  /* font-family: "Work Sans", sans-serif; */
+  
 }
-
-/* body {
-  height: 100%;
-  width: 100%;
-  background: #121b25;
-  direction: rtl; 
-} */
 
 section {
   padding: 80px 13% 70px;
@@ -132,8 +125,6 @@ footer {
   padding: 10px 0;
   /* Padding around the text */
   width: 100%;
-  /* Full width footer */
-  /* Removed position: fixed and bottom: 0 */
 }
 
 footer p {
